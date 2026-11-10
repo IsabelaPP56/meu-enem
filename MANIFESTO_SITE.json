@@ -1,0 +1,225 @@
+{
+  "counts": {
+    "matematica": 833,
+    "linguagens": 804,
+    "natureza": 865,
+    "humanas": 862
+  },
+  "totalQuestions": 3364,
+  "themes": 100,
+  "officialThemes": 20,
+  "trainingThemes": 80,
+  "repertories": 49,
+  "withOfficialB": 3007,
+  "tri": {
+    "Fácil": 987,
+    "Média": 1006,
+    "Difícil": 1014,
+    "sem dado": 357
+  },
+  "assetFiles": 3808,
+  "areas": [
+    {
+      "area": "matematica",
+      "title": "Matemática",
+      "count": 833,
+      "pages": 1025,
+      "imageBytes": 21820280,
+      "width": 850
+    },
+    {
+      "area": "linguagens",
+      "title": "Linguagens",
+      "count": 804,
+      "pages": 835,
+      "imageBytes": 23104966,
+      "width": 800
+    },
+    {
+      "area": "natureza",
+      "title": "Natureza",
+      "count": 865,
+      "pages": 1055,
+      "imageBytes": 24731378,
+      "width": 800
+    },
+    {
+      "area": "humanas",
+      "title": "Humanas",
+      "count": 862,
+      "pages": 893,
+      "imageBytes": 22798034,
+      "width": 850
+    }
+  ],
+  "sampledAnswerKeys": [
+    {
+      "area": "matematica",
+      "id": "M001",
+      "year": 2025,
+      "number": 136,
+      "answer": "C",
+      "tri": "Fácil",
+      "bookPages": [
+        4
+      ]
+    },
+    {
+      "area": "matematica",
+      "id": "M417",
+      "year": 2023,
+      "number": 145,
+      "answer": "B",
+      "tri": "Difícil",
+      "bookPages": [
+        500
+      ]
+    },
+    {
+      "area": "matematica",
+      "id": "M833",
+      "year": 2007,
+      "number": 59,
+      "answer": "C",
+      "tri": "sem dado",
+      "bookPages": [
+        1029,
+        1030
+      ]
+    },
+    {
+      "area": "matematica",
+      "id": "M184",
+      "year": 2018,
+      "number": 163,
+      "answer": "Anulada",
+      "tri": "sem dado",
+      "bookPages": [
+        208
+      ]
+    },
+    {
+      "area": "linguagens",
+      "id": "L001",
+      "year": 2025,
+      "number": 14,
+      "answer": "C",
+      "tri": "Fácil",
+      "bookPages": [
+        4
+      ]
+    },
+    {
+      "area": "linguagens",
+      "id": "L406",
+      "year": 2015,
+      "number": 126,
+      "answer": "E",
+      "tri": "Difícil",
+      "bookPages": [
+        420
+      ]
+    },
+    {
+      "area": "linguagens",
+      "id": "L807",
+      "year": 2011,
+      "number": 103,
+      "answer": "D",
+      "tri": "Fácil",
+      "bookPages": [
+        841
+      ]
+    },
+    {
+      "area": "linguagens",
+      "id": "L328",
+      "year": 2009,
+      "number": 101,
+      "answer": "Anulada",
+      "tri": "sem dado",
+      "bookPages": [
+        341
+      ]
+    },
+    {
+      "area": "natureza",
+      "id": "N001",
+      "year": 2025,
+      "number": 96,
+      "answer": "B",
+      "tri": "Fácil",
+      "bookPages": [
+        4
+      ]
+    },
+    {
+      "area": "natureza",
+      "id": "N433",
+      "year": 2012,
+      "number": 50,
+      "answer": "E",
+      "tri": "Fácil",
+      "bookPages": [
+        527
+      ]
+    },
+    {
+      "area": "natureza",
+      "id": "N865",
+      "year": 2009,
+      "number": 40,
+      "answer": "D",
+      "tri": "Média",
+      "bookPages": [
+        1058
+      ]
+    },
+    {
+      "area": "natureza",
+      "id": "N115",
+      "year": 2020,
+      "number": 135,
+      "answer": "Anulada",
+      "tri": "sem dado",
+      "bookPages": [
+        142
+      ]
+    },
+    {
+      "area": "humanas",
+      "id": "H001",
+      "year": 2025,
+      "number": 73,
+      "answer": "A",
+      "tri": "Fácil",
+      "bookPages": [
+        4
+      ]
+    },
+    {
+      "area": "humanas",
+      "id": "H432",
+      "year": 2016,
+      "number": 40,
+      "answer": "C",
+      "tri": "Média",
+      "bookPages": [
+        453
+      ]
+    },
+    {
+      "area": "humanas",
+      "id": "H862",
+      "year": 2009,
+      "number": 72,
+      "answer": "A",
+      "tri": "Média",
+      "bookPages": [
+        896
+      ]
+    }
+  ],
+  "source": "Somente apostilas de Isabela e Redação v3; 3 treinos adicionais de LC não incluídos.",
+  "testing": "Node.js + jsdom; prévias HTML/CSS renderizadas com WeasyPrint, não capturas de navegador."
+}

@@ -1,0 +1,49 @@
+MEU ENEM — O CANTINHO DA ISABELA
+Plataforma pessoal offline • ENEM 2027
+
+COMO ABRIR
+1. Baixe o(s) ZIP(s) que você quer estudar e EXTRAIA os arquivos. Não abra o site dentro do ZIP.
+2. Abra a pasta ENEM_Isabela e dê dois cliques em index.html. Use um navegador atualizado (Chrome, Edge, Firefox ou Safari).
+3. Para ter as quatro áreas e Redação no mesmo site, extraia os seis ZIPs NA MESMA PASTA. Todos contêm a pasta ENEM_Isabela: una as pastas e aceite substituir os arquivos repetidos, que são idênticos.
+
+PACOTES POR ÁREA
+Matemática, Linguagens e Humanas: cada ZIP funciona sozinho com a área correspondente e com Redação. Natureza tem DUAS PARTES: extraia parte1 e parte2 NA MESMA PASTA antes de abrir; o site avisa se faltar uma delas. Essa divisão preserva a legibilidade dos diagramas sem ultrapassar o limite do anexo. Os cards das áreas ainda não extraídas avisam que falta o pacote.
+O ZIP Redação é uma versão leve com os 100 temas, o modelo base e os repertórios. Para o site completo, extraia todos no mesmo lugar.
+Mantenha index.html, app.js, style.css e as pastas data e assets juntos. Não renomeie nem separe as pastas.
+No celular, extraia antes e abra index.html em um navegador que execute arquivos HTML locais. Alguns aplicativos Arquivos mostram apenas uma prévia: isso não é o navegador completo. O comportamento de arquivos locais depende do sistema; computador e Chrome/Edge no Android são os caminhos mais diretos.
+
+QUESTÕES
+Escolha a área; filtre matéria, submatéria, ano, TRI e progresso. Os selos coloridos exibem a TRI na lista e na questão. O parâmetro b oficial pode ser consultado no detalhe.
+Clique em A–E para conferir o gabarito e o comentário da apostila. Use Anterior, Próxima, Aleatória e Tentar novamente.
+Os recortes são fac-símiles das páginas das apostilas. Toque na imagem para ampliar; use Aumentar + e deslize para ler figuras, eixos e símbolos. Também há texto extraído para leitura; nas fórmulas e alternativas visuais, vale o fac-símile.
+As anuladas não têm alternativa válida e não entram na taxa de acerto. Você pode marcá-las como revisadas.
+
+PROGRESSO E PRIVACIDADE
+O site não precisa de servidor, login nem internet. Não tem anúncios, rastreamento, fontes remotas ou correção por IA.
+Respostas e rascunhos ficam no localStorage DESTE navegador. Outro navegador, outra pasta/endereço, aparelho ou janela anônima pode ter um armazenamento diferente. Limpar dados do navegador pode apagar os registros.
+Em Meu desempenho, veja acertos por área, matéria, submatéria e dificuldade. As porcentagens consideram a ÚLTIMA resposta de cada questão, não todas as tentativas. Itens anulados não entram no denominador de acerto.
+Use Exportar backup e Importar backup para guardar ou transferir respostas e rascunhos. O arquivo de backup contém os textos: guarde com cuidado. Se o navegador bloquear o armazenamento em arquivos locais, use os backups; haverá um aviso no site.
+Zerar progresso das questões não apaga rascunhos de Redação.
+O modo escuro é opcional. Os fac-símiles continuam com fundo branco para preservar as figuras.
+
+REDAÇÃO
+100 temas por eixo: 20 oficiais (2006–2025) + 80 elaborados para treino. Treinos NÃO são previsões do INEP.
+Cada tema tem seus próprios textos motivadores e rascunho. O contador estima linhas usando 65 caracteres por linha; a escrita à mão e a tela variam. Confira 30 linhas na folha definitiva.
+O cronômetro é opcional; pode iniciar, pausar e zerar. Ao sair da área, ele pausa e guarda o tempo.
+Copiar redação inclui o tema e o texto para você COLAR NO CHAT DO ENEM e pedir correção pelas 5 competências. Se a cópia automática for bloqueada, o site mostra o texto para copiar manualmente.
+Você também pode selecionar uma foto para conferência local. A foto NÃO é salva nem enviada pelo site. Envie a foto original da folha diretamente no chat para a correção.
+Não existe IA dentro desta versão offline; nenhum texto ou foto é enviado automaticamente.
+
+CONTEÚDO FECHADO DAS APOSTILAS
+Matemática: 833 questões reais.
+Linguagens: 804 questões reais, sem Espanhol. Os 3 exercícios autorais adicionais da apostila não foram incluídos, para manter a contagem real solicitada.
+Natureza: 865 questões reais.
+Humanas: 862 questões reais.
+Total: 3.364 questões reais, sem acréscimos externos.
+Redação v3: 100 temas, modelo base, 16 repertórios socioculturais e 33 teóricos.
+A seleção de 2006–2008 é editorial, pois as provas eram interdisciplinares; alguns itens podem aparecer em mais de uma área das apostilas.
+TRI: NU_PARAM_B oficial; Fácil/Média/Difícil são rótulos editoriais por tercis anuais, não pontos da questão. Sem parâmetro: sem dado.
+Enunciados, gabaritos, comentários e limitações são os das apostilas. Em 2008, o gabarito utilizado nas apostilas veio de reprodução textual indexada, com validação mais limitada. Nos motivadores oficiais da Redação v3, figuras já transcritas como descrições entre colchetes permanecem assim.
+
+BONS ESTUDOS, ISABELA!
+Uma questão. Uma descoberta. Um passo à frente.
