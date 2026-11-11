@@ -1,4 +1,4 @@
-MEU ENEM — ISABELA • FASE 3B PARCIAL (40 RESOLUÇÕES DETALHADAS)
+MEU ENEM — ISABELA • 130 RESUMOS + RESOLUÇÕES 2021–2025 EM EXPANSÃO
 
 COMO ABRIR
 Mantenha toda a pasta junta e abra index.html em um navegador atualizado. Funciona sem servidor e sem internet. Alguns apps de arquivos do celular mostram apenas uma prévia: abra num navegador que execute HTML. Não há IA, login, ranking, pontos, anúncios ou envio de dados. A fonte Inter é local, com licença OFL. YouTube e referências externas precisam de internet e abrem separadamente.
@@ -40,9 +40,13 @@ Dados ficam neste navegador/origem, sem sincronização. Mudar aparelho, navegad
 ENTREGUE / PRÓXIMA ETAPA
 Entregue agora: revisão segura dos itens sinalizados, simulados, histórico/resultados e Meu plano com métodos/evidências.
 Entregue no piloto 3B: 40 resoluções autorais (10 por área, ENEM 2022–2025), com passo a passo e análise de A–E. Selo e filtro “Resolução detalhada”; tente antes de ler. A explicação só aparece após conferir no banco ou finalizar o simulado. Gabaritos conferidos nos documentos oficiais; 4 de 2023 usam reprodução do PDF INEP no fisica.net, explicitada na tela. Também foram completados os textos comuns das questões 6–10 de Linguagens 2025 com as 45 linhas originais.
-Resumos: 32/130 publicados, com conceitos, mecanismos/fórmulas, exemplos autorais, pegadinhas, método, prática e referências. Restam 98 identificados como em preparação. Comentários originais das apostilas continuam disponíveis.
+Resumos: 130/130 publicados, com conceitos, mecanismos/fórmulas, exemplos autorais, pegadinhas, método, prática e referências. Restam 0 em preparação. Comentários originais das apostilas continuam disponíveis.
 Fase 4 (PPL/reaplicação/Digital e expansão oficial) NÃO iniciada.
 QA: Node/jsdom, conferência de metadados/arquivos e prévias estáticas HTML/CSS com WeasyPrint. As imagens em site_prints_v2 são PRÉVIAS ESTÁTICAS, não capturas de um navegador real; confira também Chrome/Safari em celular antes de publicar. A pasta de prévias/relatórios fica fora do deploy.
+
+RESOLUÇÕES — ATUALIZAÇÃO DO RECORTE
+900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 50 resoluções detalhadas: 40 do piloto e 10 novas de Linguagens 2025, inclusive uma questão exibida em fac-símile. Restam 850, ainda não revisadas para resolução detalhada; isso não significa que sejam incertas. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
+As 10 novas são carregadas só após conferir a resposta ou abrir resultado finalizado, pelo arquivo data/resolucoes/linguagens_2025.js. Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
 
 RESUMOS AUTORAIS — ATUALIZAÇÃO
 Biblioteca no menu Resumos; filtros por área/matéria/disponibilidade e busca. Capítulos publicados em ordem de incidência do banco, sem estimar o futuro ENEM. Botões levam ao filtro exato do assunto; questões e caderno de erros também dão acesso ao resumo quando disponível. Ler não altera progresso. Fontes externas e YouTube precisam de internet; capítulos e questões não.

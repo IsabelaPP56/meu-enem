@@ -257,7 +257,7 @@
     "realBrowserQAStillNeeded": true
   },
   "version": "3A-local-2026-11-10",
-  "phase": "Fase 3B: 40 resoluções e resumos autorais parciais",
+  "phase": "Fase 3B: resumos autorais e resoluções em expansão",
   "questionsUnchanged": false,
   "channels": 29,
   "repertoryCards": 59,
@@ -310,11 +310,11 @@
   },
   "phase3Started": true,
   "phase4Started": false,
-  "siteBytes": 71211255,
+  "siteBytes": 71577389,
   "phase3Completed": false,
-  "phase3DetailedResolutions": 40,
-  "phase3DetailedSummaries": 40,
-  "phase3Pending": "90 resumos autorais e homologação em navegador real",
+  "phase3DetailedResolutions": 50,
+  "phase3DetailedSummaries": 130,
+  "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
     "isabela.enem.2027.simulados.v1",
     "isabela.enem.2027.plano.v1"
@@ -329,7 +329,9 @@
     "rotina, grade exata até novembro 2027, marcação, edição e impressão",
     "métodos por matéria e evidências reais",
     "propostas de dois blocos somente após aceite",
-    "piloto de 40 resoluções com passos e análise A–E, selo e filtro"
+    "piloto de 40 resoluções com passos e análise A–E, selo e filtro",
+    "resumos autorais completos: 130 capítulos, 56.480 palavras, prática e referências",
+    "resoluções recentes sob demanda: 10 novas, 50 disponíveis no total"
   ],
   "phase3b": {
     "counts": {
@@ -340,7 +342,7 @@
       },
       "linguagens": {
         "questions": 804,
-        "detailed": 10,
+        "detailed": 20,
         "officialB": 755
       },
       "natureza": {
@@ -355,10 +357,11 @@
       }
     },
     "years": {
-      "2025": 25,
+      "2025": 35,
       "2024": 9,
       "2023": 4,
-      "2022": 2
+      "2022": 2,
+      "2021": 0
     },
     "officialKeyMirrorItems": [
       "matematica:M702",
@@ -374,8 +377,64 @@
       "linguagens:L782"
     ],
     "browserQA": "Node/jsdom e prévias estáticas WeasyPrint; Chrome não homologado",
-    "summariesPending": 130,
-    "publishedSummaries": 40,
-    "pendingSummaries": 90
+    "summariesPending": 0,
+    "publishedSummaries": 130,
+    "pendingSummaries": 0
+  },
+  "resolutionScope": {
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "questions": 900,
+    "resolved": 50,
+    "pending": 850,
+    "byArea": {
+      "matematica": {
+        "scope": 225,
+        "resolved": 10
+      },
+      "linguagens": {
+        "scope": 225,
+        "resolved": 20
+      },
+      "natureza": {
+        "scope": 225,
+        "resolved": 10
+      },
+      "humanas": {
+        "scope": 225,
+        "resolved": 10
+      }
+    },
+    "byYear": {
+      "2025": {
+        "scope": 180,
+        "resolved": 35
+      },
+      "2024": {
+        "scope": 180,
+        "resolved": 9
+      },
+      "2023": {
+        "scope": 180,
+        "resolved": 4
+      },
+      "2022": {
+        "scope": 180,
+        "resolved": 2
+      },
+      "2021": {
+        "scope": 180,
+        "resolved": 0
+      }
+    },
+    "newLazyLoaded": 10,
+    "legacyEagerPilot": 40,
+    "flaggedUncertain": 0,
+    "annulled": 7
   }
 }
