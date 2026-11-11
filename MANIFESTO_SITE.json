@@ -312,7 +312,7 @@
   "phase4Started": false,
   "siteBytes": 71577389,
   "phase3Completed": false,
-  "phase3DetailedResolutions": 50,
+  "phase3DetailedResolutions": 195,
   "phase3DetailedSummaries": 130,
   "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
@@ -331,33 +331,33 @@
     "propostas de dois blocos somente após aceite",
     "piloto de 40 resoluções com passos e análise A–E, selo e filtro",
     "resumos autorais completos: 130 capítulos, 56.480 palavras, prática e referências",
-    "resoluções recentes sob demanda: 10 novas, 50 disponíveis no total"
+    "resoluções recentes sob demanda: 155 em quatro pacotes; 195 explicações no total, incluindo 3 anuladas"
   ],
   "phase3b": {
     "counts": {
       "matematica": {
         "questions": 833,
-        "detailed": 10,
+        "detailed": 50,
         "officialB": 749
       },
       "linguagens": {
         "questions": 804,
-        "detailed": 20,
+        "detailed": 48,
         "officialB": 755
       },
       "natureza": {
         "questions": 865,
-        "detailed": 10,
+        "detailed": 51,
         "officialB": 745
       },
       "humanas": {
         "questions": 862,
-        "detailed": 10,
+        "detailed": 46,
         "officialB": 758
       }
     },
     "years": {
-      "2025": 35,
+      "2025": 180,
       "2024": 9,
       "2023": 4,
       "2022": 2,
@@ -379,7 +379,8 @@
     "browserQA": "Node/jsdom e prévias estáticas WeasyPrint; Chrome não homologado",
     "summariesPending": 0,
     "publishedSummaries": 130,
-    "pendingSummaries": 0
+    "pendingSummaries": 0,
+    "resolutions2025Completed": true
   },
   "resolutionScope": {
     "years": [
@@ -390,30 +391,30 @@
       2025
     ],
     "questions": 900,
-    "resolved": 50,
-    "pending": 850,
+    "resolved": 195,
+    "pending": 705,
     "byArea": {
       "matematica": {
         "scope": 225,
-        "resolved": 10
+        "resolved": 50
       },
       "linguagens": {
         "scope": 225,
-        "resolved": 20
+        "resolved": 48
       },
       "natureza": {
         "scope": 225,
-        "resolved": 10
+        "resolved": 51
       },
       "humanas": {
         "scope": 225,
-        "resolved": 10
+        "resolved": 46
       }
     },
     "byYear": {
       "2025": {
         "scope": 180,
-        "resolved": 35
+        "resolved": 180
       },
       "2024": {
         "scope": 180,
@@ -432,9 +433,27 @@
         "resolved": 0
       }
     },
-    "newLazyLoaded": 10,
+    "newLazyLoaded": 155,
     "legacyEagerPilot": 40,
     "flaggedUncertain": 0,
-    "annulled": 7
+    "annulled": 7,
+    "validLetterResolutions": 192,
+    "annulledAnalyzed": 3,
+    "latestYearComplete": 2025,
+    "latestYearCoverage": {
+      "questions": 180,
+      "validLetterResolutions": 177,
+      "annulledAnalyzed": 3,
+      "allFourAreasComplete": true
+    },
+    "thisIncrement": {
+      "new": 145,
+      "byArea": {
+        "matematica": 40,
+        "linguagens": 28,
+        "natureza": 41,
+        "humanas": 36
+      }
+    }
   }
 }
