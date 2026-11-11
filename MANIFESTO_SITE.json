@@ -256,7 +256,7 @@
     "imageErrors": 0,
     "realBrowserQAStillNeeded": true
   },
-  "version": "3.2",
+  "version": "3.3",
   "phase": "Fase 3B: resumos autorais e resoluções em expansão",
   "questionsUnchanged": false,
   "channels": 29,
@@ -674,8 +674,17 @@
     "approval": "users/{uid}.status = aprovado",
     "dailyAttempts": 30,
     "aiModel": "gemini-3.8-flash",
-    "appCheckSiteKeyConfigured": false,
+    "appCheckSiteKeyConfigured": true,
     "progressSync": "optional/manual",
     "paywallSecurity": "Static public files are not protected by login."
+  },
+  "invitations": {
+    "autoApproval": true,
+    "manualApprovalLink": true,
+    "codeLength": 32,
+    "defaultExpiryDays": 30,
+    "defaultMaxUses": null,
+    "counter": "atomic users approval + invite uses increment; getAfter enforced",
+    "adminCollection": "admins/{uid} (root)"
   }
 }

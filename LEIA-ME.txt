@@ -1,11 +1,14 @@
-MEU ENEM — v3.2 (incremental sobre v3.1)
+MEU ENEM — v3.3 (incremental sobre v3.2)
 
 Esta versão abre em HTTPS, com internet, pelo GitHub Pages. Não abra por file://: Firebase/ES modules, login, reCAPTCHA e IA dependem da rede. Para estudo totalmente offline, mantenha uma cópia COMPLETA anterior à v3.2. O pacote v3.1 também é incremental, não uma cópia completa do banco.
 
 3.364 questões • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
 Aulas: índice local de até 300 uploads recentes por canal. Vídeos/fontes externas precisam de internet. Nenhuma aula é baixada.
 
-CONFIGURAÇÃO PENDENTE
+NOVIDADE v3.3 — CONVITES
+Painel da administração > Convites: gere link de liberação automática (padrão: usos ilimitados, 30 dias), copie ou compartilhe; opção de limitar usos e desativar. Link com aprovação cria cadastro pendente. Contagem e aprovação são atômicas; bloqueados/removidos não são reativados por convite. Administrador é admins/UID na RAIZ do Firestore, nunca subcoleção de users/UID. Republique firestore.rules v3.3 no Console para ativar; as configurações existentes de Firebase/App Check não foram alteradas. Links automáticos são credenciais de convite: não publique. Desativar não bloqueia quem já entrou.
+
+CONFIGURAÇÃO GERAL
 Leia CONFIGURAR_FIREBASE.txt, que acompanha o pacote de entrega, antes de habilitar o acesso: publicar firestore.rules pelo Console; autorizar o domínio; criar um administrador pelo UID; configurar a site key PÚBLICA em cloud/options.js e registrar App Check. Nenhum usuário real ou chamada de IA foi criado no teste desta entrega.
 
 ACESSO

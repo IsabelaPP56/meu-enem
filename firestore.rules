@@ -5,6 +5,28 @@ service cloud.firestore {
   function admin() { return signed() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
   function own(uid) { return signed() && request.auth.uid == uid; }
   function approved() { return signed() && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.status == 'aprovado'; }
+
+  function validAutoInvite(code) {
+   let i = get(/databases/$(database)/documents/convites/$(code)).data;
+   return i.active == true && i.mode == 'auto' && i.expiresAt is timestamp && i.expiresAt > request.time && i.uses is int && i.uses >= 0 && (!('maxUses' in i) || i.maxUses == null || (i.maxUses is int && i.maxUses > i.uses));
+  }
+  function redeemedInvite(code) {
+   return code is string && code.matches('^[A-Za-z0-9]{24,64}$') && validAutoInvite(code) && getAfter(/databases/$(database)/documents/convites/$(code)).data.uses == get(/databases/$(database)/documents/convites/$(code)).data.uses + 1;
+  }
+  function inviteShape(i) {
+   return i.keys().hasAll(['mode','active','createdBy','createdAt','expiresAt','uses']) && i.keys().hasOnly(['mode','active','createdBy','createdAt','expiresAt','maxUses','uses']) && i.mode in ['auto','manual'] && i.active is bool && i.createdBy is string && i.createdAt is timestamp && i.expiresAt is timestamp && i.uses is int && i.uses >= 0 && (!('maxUses' in i) || i.maxUses == null || (i.maxUses is int && i.maxUses >= 1));
+  }
+  function pairedApproval(code) {
+   let path = /databases/$(database)/documents/users/$(request.auth.uid);
+   return (!exists(path) || get(path).data.status == 'pendente') && getAfter(path).data.status == 'aprovado' && getAfter(path).data.inviteCode == code && getAfter(path).data.updatedAt == request.time;
+  }
+  match /convites/{code} {
+   allow get: if signed();
+   allow list: if admin();
+   allow create: if admin() && code.matches('^[A-Za-z0-9]{24,64}$') && inviteShape(request.resource.data) && request.resource.data.createdBy == request.auth.uid && request.resource.data.createdAt == request.time && request.resource.data.expiresAt > request.time && request.resource.data.uses == 0;
+   allow update: if (admin() && inviteShape(request.resource.data) && request.resource.data.createdBy == resource.data.createdBy && request.resource.data.createdAt == resource.data.createdAt) || (signed() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['uses']) && validAutoInvite(code) && request.resource.data.uses is int && request.resource.data.uses == resource.data.uses + 1 && pairedApproval(code));
+   allow delete: if false;
+  }
   match /admins/{uid} {
    allow get: if own(uid);
    allow list, create, update, delete: if false; // Bootstrap somente pelo Console/Admin SDK confiável.
@@ -12,8 +34,8 @@ service cloud.firestore {
   match /users/{uid} {
    allow get: if own(uid) || admin();
    allow list: if admin();
-   allow create: if admin() || (own(uid) && request.resource.data.keys().hasOnly(['name','email','status','createdAt','updatedAt']) && request.resource.data.status == 'pendente' && request.resource.data.email == request.auth.token.email && request.resource.data.name is string && request.resource.data.name.size() <= 100 && request.resource.data.createdAt == request.time && request.resource.data.updatedAt == request.time);
-   allow update: if (admin() && request.resource.data.status in ['pendente','aprovado','bloqueado','removido']) || (own(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name','targetCourse','updatedAt']) && request.resource.data.status == resource.data.status && request.resource.data.name is string && request.resource.data.name.size() <= 100 && (!('targetCourse' in request.resource.data) || (request.resource.data.targetCourse is string && request.resource.data.targetCourse.size() <= 120)) && request.resource.data.updatedAt == request.time);
+   allow create: if admin() || (own(uid) && request.resource.data.keys().hasOnly(['name','email','status','createdAt','updatedAt','inviteCode']) && request.resource.data.email == request.auth.token.email && request.resource.data.name is string && request.resource.data.name.size() <= 100 && request.resource.data.createdAt == request.time && request.resource.data.updatedAt == request.time && ((request.resource.data.status == 'pendente' && !('inviteCode' in request.resource.data)) || (request.resource.data.status == 'aprovado' && 'inviteCode' in request.resource.data && redeemedInvite(request.resource.data.inviteCode))));
+   allow update: if (admin() && request.resource.data.status in ['pendente','aprovado','bloqueado','removido']) || (own(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name','targetCourse','updatedAt']) && request.resource.data.status == resource.data.status && request.resource.data.name is string && request.resource.data.name.size() <= 100 && (!('targetCourse' in request.resource.data) || (request.resource.data.targetCourse is string && request.resource.data.targetCourse.size() <= 120)) && request.resource.data.updatedAt == request.time) || (own(uid) && resource.data.status == 'pendente' && request.resource.data.status == 'aprovado' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','inviteCode','updatedAt']) && request.resource.data.updatedAt == request.time && 'inviteCode' in request.resource.data && redeemedInvite(request.resource.data.inviteCode));
    allow delete: if false; // Remover acesso mantém tombstone: usuário não pode recriar perfil pendente.
    match /progress/{id} {
     allow read: if own(uid) && approved();

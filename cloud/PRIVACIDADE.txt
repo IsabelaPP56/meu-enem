@@ -11,3 +11,5 @@ Explicações de questões: são compartilhadas entre contas aprovadas e marcada
 O reCAPTCHA/App Check usa sinais necessários à proteção contra abuso. Aplicam-se as políticas do Google, disponíveis nos links da tela de entrada. Não ativamos Analytics neste código.
 
 Antes de distribuir ou vender, a administração precisa definir responsável e canal de atendimento, política de retenção/exclusão, base legal, tratamento de dados de menores, termos do serviço e custos. Esta descrição técnica NÃO substitui uma política de privacidade revisada para o serviço real.
+
+Convites: o código recebido no link é guardado temporariamente neste navegador para sobreviver ao login Google e removido após processamento concluído. O endereço é limpo na barra para reduzir compartilhamento acidental. Convite automático aprovado grava inviteCode no perfil e soma um uso na mesma transação. Administradores veem convites, usos e validade. Quem tiver um link automático válido pode obter acesso e encaminhá-lo; trate-o como credencial de convite, não o publique. Convites não reativam bloqueados/removidos.
