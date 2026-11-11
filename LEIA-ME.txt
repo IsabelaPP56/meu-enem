@@ -1,9 +1,15 @@
-MEU ENEM — v3.3 (incremental sobre v3.2)
+MEU ENEM — v3.4 (incremental sobre v3.3)
 
 Esta versão abre em HTTPS, com internet, pelo GitHub Pages. Não abra por file://: Firebase/ES modules, login, reCAPTCHA e IA dependem da rede. Para estudo totalmente offline, mantenha uma cópia COMPLETA anterior à v3.2. O pacote v3.1 também é incremental, não uma cópia completa do banco.
 
 3.364 questões • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
 Aulas: índice local de até 300 uploads recentes por canal. Vídeos/fontes externas precisam de internet. Nenhuma aula é baixada.
+
+NOVIDADES v3.4 — ASSISTENTE E MINHA CONTA
+O botão redondo abre o chat lateral (tela cheia no celular), com atalhos, mensagens em tempo real, histórico ao minimizar/reabrir e erros com nova tentativa. Perguntas gerais não anexam figuras de uma questão aberta sem necessidade. Contexto de questão inclui figuras e gabarito; resumo aberto também é reconhecido. A conversa fica na memória desta sessão e é descartada ao sair/trocar conta.
+Chat: Flash-Lite 3.5 com thinking MINIMAL, fallback Flash 3.8 com LOW; saída de até 2.048 tokens. Até 20 s para começar a responder por modelo; 12 s sem texto interrompem uma transmissão; 55 s para toda a cadeia de modelos e 65 s para o envio completo. Fallback automático não duplica a tentativa do aplicativo; pode fazer duas chamadas ao provedor. Tentar de novo manualmente reserva nova tentativa. Correção de redação e explicação estruturada preservam sua rotina anterior de modelos.
+Minha conta agora fica no menu lateral, em página própria: sincronização manual, histórico e administração/convites. O único botão flutuante é o assistente. Nenhuma regra, convite ou site key foi alterado. Se a v3.3 já funciona, não é necessário alterar o Console Firebase para esta atualização. Recarregue a página após publicar.
+QA sem usuários/requisições reais; as imagens de prévia são renderizações estáticas de estados simulados, não screenshots de Chrome.
 
 NOVIDADE v3.3 — CONVITES
 Painel da administração > Convites: gere link de liberação automática (padrão: usos ilimitados, 30 dias), copie ou compartilhe; opção de limitar usos e desativar. Link com aprovação cria cadastro pendente. Contagem e aprovação são atômicas; bloqueados/removidos não são reativados por convite. Administrador é admins/UID na RAIZ do Firestore, nunca subcoleção de users/UID. Republique firestore.rules v3.3 no Console para ativar; as configurações existentes de Firebase/App Check não foram alteradas. Links automáticos são credenciais de convite: não publique. Desativar não bloqueia quem já entrou.

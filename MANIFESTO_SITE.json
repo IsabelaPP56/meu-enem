@@ -686,5 +686,30 @@
     "defaultMaxUses": null,
     "counter": "atomic users approval + invite uses increment; getAfter enforced",
     "adminCollection": "admins/{uid} (root)"
+  },
+  "v3_4": {
+    "chat": "right-side streaming panel; full-screen mobile",
+    "chatModels": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.8-flash"
+    ],
+    "thinkingLevels": [
+      "MINIMAL",
+      "LOW"
+    ],
+    "maxOutputTokens": 2048,
+    "firstTokenTimeoutMs": 20000,
+    "streamIdleTimeoutMs": 12000,
+    "modelChainTimeoutMs": 55000,
+    "wholeSendTimeoutMs": 65000,
+    "accountView": "sidebar, approved users only; embedded administration/invitations",
+    "preserved": [
+      "progress keys",
+      "invitations",
+      "App Check site key",
+      "Firestore rules",
+      "essay and explanation flows"
+    ],
+    "qa": "Node/jsdom + mocked Firebase streaming; static HTML/CSS previews, not real browser or production AI"
   }
 }

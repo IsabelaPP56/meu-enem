@@ -368,6 +368,9 @@ window.MEU_ENEM_SUMMARIES={catalog:rsCatalog,data:rsData,available:rsCount,rende
  document.addEventListener('submit',e=>{if(e.target.id!=='v3-profile-form')return;e.preventDefault();try{const x={name:$('#v3-profile-name').value,targetCourse:$('#v3-profile-course').value,scores:Object.fromEntries($$('[data-v3-score]').map(el=>[el.dataset.v3Score,el.value]))};settings.profile=v3CleanProfile(x);save(sk,settings);const d=$('#v3-profile');if(d.close)d.close();else d.removeAttribute('open');render();toast('Perfil salvo neste navegador.')}catch(err){$('#v3-profile-error').textContent=err.message}});
  window.MEU_ENEM_V3={videoResults:v3VideoResults,validateYears:v3ValidateYears,exampleProfile:v3ExampleProfile,exampleHTML:v3ExampleHTML,cleanProfile:v3CleanProfile,openProfile:v3ProfileDialog};
 
+ // Conta conectada: view própria e item no mesmo menu das demais seções.
+ const cloudNav=nav;nav=function(){cloudNav();if(window.MEU_ENEM_CLOUD_ACCOUNT?.isLoggedIn())$('#sidebar nav')?.insertAdjacentHTML('beforeend','<button type="button" class="nav-item '+(state.view==='account'?'active':'')+'" data-view="account" aria-label="Minha conta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></svg><span>Minha conta</span></button>')};
+ const cloudRender=render;render=function(){if(state.view==='account'&&window.MEU_ENEM_CLOUD_ACCOUNT?.isLoggedIn()){nav();$('#main').className='view-account';window.MEU_ENEM_CLOUD_ACCOUNT.render()}else cloudRender()};
  window.MEU_ENEM_APP={state,filtered,stats,lineEstimate,answer,view,getProgress:()=>progress,getDrafts:()=>drafts,all,essayCopy,render,saveCurrent:pauseEssay,getLearning:()=>learning,dueReviews,commitAnswer,diagnosticPool,startDiagnostic,openReview};
  render();if(!storageOK)toast('Armazenamento local indisponível: use Exportar backup para guardar seu progresso.');
 })();
