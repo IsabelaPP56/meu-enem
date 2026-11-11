@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function signed() { return request.auth != null; }
+  function admin() { return signed() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
+  function own(uid) { return signed() && request.auth.uid == uid; }
+  function approved() { return signed() && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.status == 'aprovado'; }
+  match /admins/{uid} {
+   allow get: if own(uid);
+   allow list, create, update, delete: if false; // Bootstrap somente pelo Console/Admin SDK confiável.
+  }
+  match /users/{uid} {
+   allow get: if own(uid) || admin();
+   allow list: if admin();
+   allow create: if admin() || (own(uid) && request.resource.data.keys().hasOnly(['name','email','status','createdAt','updatedAt']) && request.resource.data.status == 'pendente' && request.resource.data.email == request.auth.token.email && request.resource.data.name is string && request.resource.data.name.size() <= 100 && request.resource.data.createdAt == request.time && request.resource.data.updatedAt == request.time);
+   allow update: if (admin() && request.resource.data.status in ['pendente','aprovado','bloqueado','removido']) || (own(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name','targetCourse','updatedAt']) && request.resource.data.status == resource.data.status && request.resource.data.name is string && request.resource.data.name.size() <= 100 && (!('targetCourse' in request.resource.data) || (request.resource.data.targetCourse is string && request.resource.data.targetCourse.size() <= 120)) && request.resource.data.updatedAt == request.time);
+   allow delete: if false; // Remover acesso mantém tombstone: usuário não pode recriar perfil pendente.
+   match /progress/{id} {
+    allow read: if own(uid) && approved();
+    allow create, update: if own(uid) && approved() && id == 'current' && request.resource.data.keys().hasOnly(['json','updatedAt']) && request.resource.data.json is string && request.resource.data.json.size() <= 750000 && request.resource.data.updatedAt == request.time;
+    allow delete: if own(uid) && approved();
+   }
+   match /redacoes/{id} {
+    allow read, delete: if own(uid) && approved();
+    allow create: if own(uid) && approved() && request.resource.data.keys().hasOnly(['theme','json','createdAt']) && request.resource.data.theme is string && request.resource.data.theme.size() <= 500 && request.resource.data.json is string && request.resource.data.json.size() <= 200000 && request.resource.data.createdAt == request.time;
+    allow update: if false;
+   }
+   match /usage/{id} {
+    allow read: if own(uid) && approved();
+    allow create: if own(uid) && approved() && id == 'daily' && request.resource.data.keys().hasOnly(['windowStart','count']) && request.resource.data.count == 1 && request.resource.data.windowStart == request.time;
+    allow update: if own(uid) && approved() && id == 'daily' && request.resource.data.keys().hasOnly(['windowStart','count']) && ((request.time >= resource.data.windowStart + duration.value(24,'h') && request.resource.data.count == 1 && request.resource.data.windowStart == request.time) || (request.resource.data.windowStart == resource.data.windowStart && request.resource.data.count == resource.data.count + 1 && request.resource.data.count <= 30));
+    allow delete: if false;
+   }
+  }
+  match /explicacoes/{idQuestao} {
+   allow read: if approved();
+   allow create: if approved() && !exists(/databases/$(database)/documents/explicacoes/$(idQuestao)) && idQuestao.matches('^(matematica|linguagens|natureza|humanas)_[LMNH][0-9]{3,4}$') && request.resource.data.keys().hasOnly(['questionId','authorId','answer','fingerprint','model','json','createdAt','generatedByAI']) && request.resource.data.questionId == idQuestao && request.resource.data.authorId == request.auth.uid && request.resource.data.answer in ['A','B','C','D','E'] && request.resource.data.fingerprint is string && request.resource.data.fingerprint.size() == 64 && request.resource.data.model is string && request.resource.data.model.size() < 100 && request.resource.data.json is string && request.resource.data.json.size() <= 50000 && request.resource.data.generatedByAI == true && request.resource.data.createdAt == request.time;
+   allow update, delete: if false; // Correções exigem ação administrativa explícita no Console.
+  }
+  match /{document=**} { allow read, write: if false; }
+ }
+}

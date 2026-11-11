@@ -9,7 +9,7 @@
   "themes": 100,
   "officialThemes": 20,
   "trainingThemes": 80,
-  "repertories": 49,
+  "repertories": 206,
   "withOfficialB": 3007,
   "tri": {
     "Fácil": 987,
@@ -17,7 +17,7 @@
     "Difícil": 1014,
     "sem dado": 357
   },
-  "assetFiles": 3993,
+  "assetFiles": 4054,
   "areas": [
     {
       "area": "matematica",
@@ -256,7 +256,7 @@
     "imageErrors": 0,
     "realBrowserQAStillNeeded": true
   },
-  "version": "3A-local-2026-11-10",
+  "version": "3.2",
   "phase": "Fase 3B: resumos autorais e resoluções em expansão",
   "questionsUnchanged": false,
   "channels": 29,
@@ -663,5 +663,19 @@
     "personalDefaultsRemoved": true,
     "officialQuotePrivacyAbbreviation": "LC 2018 Q23: nome de personagem abreviado I., com nota editorial",
     "qa": "Node/jsdom; prévias estáticas WeasyPrint, não navegador real"
+  },
+  "summaries": 130,
+  "editorialDetailedResolutions": 900,
+  "indexedVideos": 7925,
+  "indexedChannels": 29,
+  "cloud": {
+    "provider": "Firebase",
+    "requiresInternet": true,
+    "approval": "users/{uid}.status = aprovado",
+    "dailyAttempts": 30,
+    "aiModel": "gemini-3.8-flash",
+    "appCheckSiteKeyConfigured": false,
+    "progressSync": "optional/manual",
+    "paywallSecurity": "Static public files are not protected by login."
   }
 }

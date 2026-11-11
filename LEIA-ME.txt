@@ -1,14 +1,27 @@
-MEU ENEM — v3.1
+MEU ENEM — v3.2 (incremental sobre v3.1)
 
-Abra index.html com todas as pastas ao lado. Questões, resumos, repertórios, busca de aulas, miniaturas e progresso funcionam localmente. Assistir vídeos e consultar fontes externas requer internet.
+Esta versão abre em HTTPS, com internet, pelo GitHub Pages. Não abra por file://: Firebase/ES modules, login, reCAPTCHA e IA dependem da rede. Para estudo totalmente offline, mantenha uma cópia COMPLETA anterior à v3.2. O pacote v3.1 também é incremental, não uma cópia completa do banco.
 
-3.364 questões • 130 resumos • 900 explicações 2021–2025 • 100 temas • 206 repertórios.
-7.925 vídeos em 29 canais: até 300 uploads recentes por canal, não o histórico completo. Miniaturas agrupadas em 29 folhas locais. Nenhuma aula é baixada ou incorporada.
+3.364 questões • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
+Aulas: índice local de até 300 uploads recentes por canal. Vídeos/fontes externas precisam de internet. Nenhuma aula é baixada.
 
-Simulado personalizado: padrão 2015–2025; ajuste ano inicial/final. A disponibilidade e o sorteio respeitam o intervalo.
-Meu plano: exemplo genérico editável de 2º ano com escola de manhã; não é salvo até confirmar. Notas iniciais ficam vazias. Perfil opcional no menu, só neste navegador.
-Dados antigos: migração automática por sufixo para chaves genéricas, mantendo as antigas. Exporte backup antes de trocar aparelho/navegador ou limpar dados.
-Redação: quebras preservadas e 29 recortes oficiais. Dados dos motivadores pertencem ao ano da prova. Repertórios novos têm fontes e cautelas; dois apoios antigos do modelo continuam com aviso de atribuição não verificada.
-Privacidade editorial: em LC/2018/Q23, um nome homônimo de personagem foi abreviado como I., com nota explícita. Alternativas e gabarito preservados.
+CONFIGURAÇÃO PENDENTE
+Leia CONFIGURAR_FIREBASE.txt, que acompanha o pacote de entrega, antes de habilitar o acesso: publicar firestore.rules pelo Console; autorizar o domínio; criar um administrador pelo UID; configurar a site key PÚBLICA em cloud/options.js e registrar App Check. Nenhum usuário real ou chamada de IA foi criado no teste desta entrega.
 
-Esta versão não tem login, IA nem proteção de conteúdo para venda. Não foi publicada automaticamente.
+ACESSO
+E-mail/senha, Google e recuperação. Cadastro fica pendente. A administração aprova, bloqueia ou remove acesso. Remover acesso não exclui a conta do Firebase Authentication.
+
+PROGRESSO
+Dados antigos continuam compatíveis; migração mantém chaves anteriores. No primeiro login, confirme se quer vincular o estudo já existente à conta. Há cópia local por conta; não é criptografia. Em aparelho compartilhado, use perfil separado do navegador. Salvar/restaurar progresso na nuvem é opcional e MANUAL; inclui respostas e aprendizagem, não redações, cronograma nem simulados. Exporte backup completo antes de limpar ou trocar navegador.
+
+IA
+Dúvidas: botão flutuante; contexto da questão/resumo aberto. Correção: formulário na Redação, com texto ou foto, consentimento, transcrição, cinco competências e histórico privado; notas são ESTIMATIVAS. Foto ilegível deve ser refeita. A foto não é guardada pelo aplicativo.
+Questões sem resolução editorial: Explicar com IA, passos, A–E e gabarito oficial; cache local/compartilhado marcado como IA, sem sobrescrita automática. O raciocínio pode falhar mesmo quando a letra é validada.
+30 tentativas por janela de 24h; falhas após reservar a tentativa também contam, leituras de cache não. Isso é controle de uso do aplicativo, NÃO limite inviolável no gateway de IA.
+
+LIMITES IMPORTANTES
+Arquivos estáticos são públicos: login NÃO protege os bancos para venda. App Check NÃO verifica status de aprovação. Chamadas diretas ao AI Logic não impõem nosso status/quota customizados. Cache compartilhado criado por clientes aprovados não comprova autoria do modelo: para venda/produção, use backend confiável, controle real de autorização/uso e revisão da política de privacidade/termos. Não há promessa de segurança comercial nesta entrega.
+
+Dados e privacidade: cloud/PRIVACIDADE.txt. Sem Analytics. Não inclua dados sensíveis nos envios à IA.
+Privacidade editorial: em LC/2018/Q23, um nome homônimo de personagem está abreviado como I., com nota explícita; alternativas e gabarito preservados.
+Não foi publicado automaticamente.

@@ -1,0 +1,13 @@
+MEU ENEM — DADOS E RECURSOS ON-LINE (descrição técnica)
+
+Conta: e-mail, identificador Firebase, nome informado pelo provedor e status são usados para login e liberação pela administração. Senhas ficam sob gerenciamento do Firebase Authentication; não são gravadas no Firestore nem no banco de questões.
+
+Estudo: respostas, aprendizagem, rascunhos, plano e simulados continuam neste navegador. Sincronização é opcional e manual: somente respostas e aprendizagem são enviadas à conta. Cada conta tem sua cópia local. Em aparelhos compartilhados, saia da conta e use perfis separados do navegador. Limpar dados do navegador pode apagar o que não foi exportado ou sincronizado.
+
+IA: só há envio ao clicar em um recurso de IA. A pergunta e o contexto da questão/resumo são processados pelo serviço de IA do Google. Texto ou foto da redação só são enviados após consentimento no formulário. Não inclua informações sensíveis. Fotos não são armazenadas pelo aplicativo; transcrição e estimativa da correção são salvas no histórico privado da conta. O processamento pelo provedor está sujeito às políticas e configurações desse serviço.
+
+Explicações de questões: são compartilhadas entre contas aprovadas e marcadas como IA, sem sua alternativa marcada nem texto pessoal no conteúdo compartilhado. O registro inclui o identificador técnico (UID) da conta que o criou e a data para auditoria, mas não seu e-mail. A letra é validada com o gabarito; o raciocínio não tem revisão humana automática e pode conter erros.
+
+O reCAPTCHA/App Check usa sinais necessários à proteção contra abuso. Aplicam-se as políticas do Google, disponíveis nos links da tela de entrada. Não ativamos Analytics neste código.
+
+Antes de distribuir ou vender, a administração precisa definir responsável e canal de atendimento, política de retenção/exclusão, base legal, tratamento de dados de menores, termos do serviço e custos. Esta descrição técnica NÃO substitui uma política de privacidade revisada para o serviço real.
