@@ -1,60 +1,14 @@
-MEU ENEM — ISABELA • 130 RESUMOS + 900 EXPLICAÇÕES 2021–2025 CONCLUÍDAS
+MEU ENEM — v3.1
 
-COMO ABRIR
-Mantenha toda a pasta junta e abra index.html em um navegador atualizado. Funciona sem servidor e sem internet. Alguns apps de arquivos do celular mostram apenas uma prévia: abra num navegador que execute HTML. Não há IA, login, ranking, pontos, anúncios ou envio de dados. A fonte Inter é local, com licença OFL. YouTube e referências externas precisam de internet e abrem separadamente.
-Nenhum push/publicação foi realizado. Os ZIPs antigos não foram regenerados: não substitua esta versão por eles.
+Abra index.html com todas as pastas ao lado. Questões, resumos, repertórios, busca de aulas, miniaturas e progresso funcionam localmente. Assistir vídeos e consultar fontes externas requer internet.
 
-QUESTÕES E REVISÃO DE FIDELIDADE
-3.364 questões das apostilas: 833 Matemática, 804 Linguagens (sem Espanhol), 865 Natureza e 862 Humanas. Nenhuma questão externa foi acrescentada. Mantidos IDs, anos, números, gabaritos, comentários, matérias, assuntos e parâmetros TRI.
-2.868 estão em texto real com figuras separadas, sem alertas automáticos; 496 usam o fac-símile completo POR PADRÃO para não expor uma extração duvidosa. Entre as 555 anteriormente sinalizadas, 59 tiveram alternativas textuais restauradas conservadoramente. As 47 com alternativas nativas incompletas estão entre as protegidas pelo original: seu texto nativo incompleto não aparece, nem no simulado. As imagens podem ser ampliadas.
-Isso não é uma revisão manual integral das 3.364 transcrições. Permanecem as ressalvas das apostilas, inclusive a validação mais limitada do gabarito de 2008. Os 3 exercícios autorais extras de Linguagens não entram no banco real solicitado.
-TRI visível: 3.007 itens com b oficial; 357 sem dado. Nunca se atribuiu dificuldade por palpite. Anuladas continuam identificadas no banco e não entram nos simulados.
+3.364 questões • 130 resumos • 900 explicações 2021–2025 • 100 temas • 206 repertórios.
+7.925 vídeos em 29 canais: até 300 uploads recentes por canal, não o histórico completo. Miniaturas agrupadas em 29 folhas locais. Nenhuma aula é baixada ou incorporada.
 
-TREINAR NO BANCO
-Filtre área, matéria, assunto, ano, TRI e situação. Marque A–E, registre Certeza/Dúvida/Chute e confira. O comentário continua sendo o da apostila. Classifique seu erro em Conteúdo, Interpretação ou Distração para receber orientação e acompanhar o desempenho.
-Erros e acertos por chute alimentam o caderno: intervalos de 1, 3, 7 e 15 dias entre revisões; erro/chute reinicia. Não existem notificações fora do site. A triagem de assuntos novos usa até 5 itens fáceis com b oficial; não é diagnóstico de domínio.
+Simulado personalizado: padrão 2015–2025; ajuste ano inicial/final. A disponibilidade e o sorteio respeitam o intervalo.
+Meu plano: exemplo genérico editável de 2º ano com escola de manhã; não é salvo até confirmar. Notas iniciais ficam vazias. Perfil opcional no menu, só neste navegador.
+Dados antigos: migração automática por sufixo para chaves genéricas, mantendo as antigas. Exporte backup antes de trocar aparelho/navegador ou limpar dados.
+Redação: quebras preservadas e 29 recortes oficiais. Dados dos motivadores pertencem ao ano da prova. Repertórios novos têm fontes e cautelas; dois apoios antigos do modelo continuam com aviso de atribuição não verificada.
+Privacidade editorial: em LC/2018/Q23, um nome homônimo de personagem foi abreviado como I., com nota explícita. Alternativas e gabarito preservados.
 
-SIMULADOS
-Escolha matérias, assuntos (seleção múltipla), quantidade por matéria, TRI e duração. Sem assuntos selecionados, entram todos daquela matéria. Falta de itens gera aviso, nunca preenchimento silencioso com outro assunto. Há mini 10/20, área de 45 e prova disponível por ano.
-A prova por ano contém apenas o banco daquele ano: exclui anuladas/Espanhol e deduplica os itens interdisciplinares 2006–2008. Não inclui redação nem reproduz os dois dias oficiais. Confira a quantidade e ajuste o tempo sugerido antes de iniciar.
-Alternativas/confiança ficam salvas. Gabarito só ao finalizar; pausa esconde a questão. Sair da tela ou fechar normalmente pausa. O relógio é registrado a cada 10 segundos; encerramento inesperado pode perder até 10 segundos. O limite finaliza automaticamente.
-O resultado separa acertos, brancos, matéria, assunto, TRI, confiança e tipo de erro. Destaques fortes/fracos exigem pelo menos 3 respostas naquela amostra e não equivalem a domínio definitivo. Classificação do erro é observação sua, não diagnóstico automático.
-Até 40 simulados salvos, sem excluir automaticamente: exporte backup e exclua manualmente se chegar ao limite. Refazer cria outra tentativa, preservando o resultado anterior. Finalizar atualiza a última resposta no banco e o caderno de erros, sem alterar resultados anteriores.
-A estimativa numérica é OPCIONAL, fechada numa seção de aviso: modelo didático não calibrado, não nota ENEM/INEP e não previsão de aprovação. b sozinho não reproduz TRI. Usa hipóteses editoriais de discriminação/piso e escala, explicitadas na tela; mínimo de 10 respostas e itens com b por área. Padrões extremos/limites não geram número. Não use para decidir aprovação ou comparar com notas oficiais.
-
-MEU PLANO — ROTINA ANTES DA GRADE
-Os horários começam DESATIVADOS. Informe sua rotina de verdade: janelas e limite diário por dia, escola, compromissos, provas escolares, blocos/pausas, redação semanal e início/fim. Se a escola varia por dia, use compromissos fixos diferentes. Nenhum calendário externo é criado.
-A grade mostra horários exatos, subtrai tempos ocupados e não ultrapassa o limite diário (inclui pausas). Janelas de estudo entre 06:00 e 23:00. Blocos de 15–90 minutos; pausas de 0–20. Fases editoriais: Base até março/2027, Aprofundamento abril–agosto, Revisão setembro–novembro. 30/11/2027 é horizonte provisório, NÃO data oficial do ENEM. A meta semanal de redação arredonda para blocos completos e pode usar outro dia se não couber no preferido.
-As notas iniciais informadas (LC 570, CH 562, CN 560, MT 643, Redação 700) são editáveis. Frequência de assuntos do banco, notas das áreas objetivas e desempenho com amostra suficiente geram prioridades editoriais, não diagnóstico. A redação segue a meta semanal escolhida por você. Provas escolares recebem prioridade nos 7 dias anteriores; sem assunto reconhecido, a matéria inteira ganha prioridade, com aviso.
-Fora redação/pausas, cada bloco automático reserva pelo menos 60% a questões/recuperação; frequentemente é 100%. Videoaula é apoio curto. O tempo indicado é tempo RESERVADO, não duração verificada de um vídeo específico; o link busca o assunto em canal previamente conferido.
-Métodos específicos por matéria, com fontes reais e limites das evidências. Há links diretos para questões/caderno/redação. Pode marcar concluído, editar horário/atividade, dispensar/restaurar blocos e imprimir a grade exibida. Edições não podem sobrepor escola, compromissos, blocos/pausas nem exceder limite diário. Dia/matéria/assunto do bloco permanecem; redistribuição vem da rotina ou de proposta aceita.
-Resultados não mudam o plano sozinhos. Propostas mostram DOIS blocos futuros livres/editáveis dos próximos 14 dias e mantêm os mesmos horários. Só mudam ao aceitar. É possível desfazer preservando blocos concluídos e edições posteriores. Recalcular rotina pede confirmação e limpa edições pendentes; blocos concluídos mantêm seu registro. Se o novo horário conflitar com um concluído coincidente, o site pede desmarcá-lo antes.
-
-REDAÇÃO
-100 temas: 20 oficiais e 80 de treino; 49 repertórios + 10 apoios da v3, modelo base e biblioteca pesquisável. Rascunho/tempo por tema, contador aproximado (65 caracteres/linha). Copiar prepara tema e texto para COLAR NO CHAT DO ENEM. Foto é prévia local, não fica salva nem é enviada: mande o original no chat para correção das cinco competências. Não há IA na página.
-
-DADOS E BACKUP
-Mantidas as chaves antigas de progresso, rascunhos, preferências e aprendizagem. Simulados e plano usam chaves novas aditivas. Exportar backup inclui tudo; importar backup antigo não apaga o plano/simulados existentes. Importe somente arquivos de confiança.
-Dados ficam neste navegador/origem, sem sincronização. Mudar aparelho, navegador, pasta/origem, modo anônimo ou limpar dados pode perder acesso ao progresso. Exporte regularmente e antes de trocar de versão; backups contêm seus textos e rotina. Zerar progresso não apaga redações/preferências nem elimina automaticamente históricos de simulados/plano; estes têm seus próprios controles/backup.
-
-ENTREGUE / PRÓXIMA ETAPA
-Entregue agora: revisão segura dos itens sinalizados, simulados, histórico/resultados e Meu plano com métodos/evidências.
-Entregue no piloto 3B: 40 resoluções autorais (10 por área, ENEM 2022–2025), com passo a passo e análise de A–E. Selo e filtro “Resolução detalhada”; tente antes de ler. A explicação só aparece após conferir no banco ou finalizar o simulado. Gabaritos conferidos nos documentos oficiais; os documentos do segundo dia de 2023 usam reprodução do PDF INEP no fisica.net, explicitada na tela. Também foram completados os textos comuns das questões 6–10 de Linguagens 2025 com as 45 linhas originais.
-Resumos: 130/130 publicados, com conceitos, mecanismos/fórmulas, exemplos autorais, pegadinhas, método, prática e referências. Restam 0 em preparação. Comentários originais das apostilas continuam disponíveis.
-Fase 4 (PPL/reaplicação/Digital e expansão oficial) NÃO iniciada.
-QA: Node/jsdom, conferência de metadados/arquivos e prévias estáticas HTML/CSS com WeasyPrint. As imagens em site_prints_v2 são PRÉVIAS ESTÁTICAS, não capturas de um navegador real; confira também Chrome/Safari em celular antes de publicar. A pasta de prévias/relatórios fica fora do deploy.
-
-RESOLUÇÕES — ATUALIZAÇÃO DO RECORTE
-900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 900 explicações (893 resoluções e 7 análises de anuladas) detalhadas: 40 do piloto e 860 em vinte pacotes por área/ano, incluindo questões em fac-símile. Restam 0 no recorte 2021–2025. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
-As 860 explicações de expansão são carregadas por área/ano em data/resolucoes/ somente após conferir a resposta ou abrir resultado finalizado (anuladas podem mostrar análise conceitual ao abrir, pois não têm resposta pontuada). Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
-
-RESUMOS AUTORAIS — ATUALIZAÇÃO
-Biblioteca no menu Resumos; filtros por área/matéria/disponibilidade e busca. Capítulos publicados em ordem de incidência do banco, sem estimar o futuro ENEM. Botões levam ao filtro exato do assunto; questões e caderno de erros também dão acesso ao resumo quando disponível. Ler não altera progresso. Fontes externas e YouTube precisam de internet; capítulos e questões não.
-
-ATUALIZAÇÃO — RECORTE 2021–2025 CONCLUÍDO
-Lote final: 180 explicações de 2021, 45 por área, mais a revisão de MT 2022 Q145/M010. Total: 900/900, 225 por área e 180 por ano; 893 com letra oficial e sete análises de anuladas, sem letra ou pontuação. Zero pendências retidas.
-MT 2022 Q145/M010: E=400 000 é o ACRÉSCIMO sobre UM pacote básico de 100 000 moedas. O total proporcional é 500 000, com 10 000 gemas. DOIS básicos são a referência das gemas; sobre dois, o acréscimo de moedas seria 300 000. Essa leitura é explicitada, sem alegar interpretação única ou justificativa oficial do Inep.
-Em CN 2021 Q98 e Q121, limites dos modelos simplificados são explicitados: a circulação fetal não é anatomicamente a de um peixe; baixa letalidade não é relógio universal de coevolução.
-Anuladas não recebem letra nem motivo oficial inventado. Resoluções autorais, não produzidas pelo Inep. Em 2021 e 2023, documentos do segundo dia foram consultados em reprodução fiel do PDF INEP no fisica.net, com procedência na resolução.
-Preservados o radical √28 de MT 2023 Q161/M798 e as correções editoriais de MT 2022. Banco, TRI, IDs, localStorage, interface, resumos e pacotes de 2023–2025 não mudaram. Nenhuma imagem nova no deploy.
-Nenhum push/publicação realizado. Prévias estáticas (jsdom + WeasyPrint), não capturas de Chrome. Revisão docente independente recomendada.
+Esta versão não tem login, IA nem proteção de conteúdo para venda. Não foi publicada automaticamente.

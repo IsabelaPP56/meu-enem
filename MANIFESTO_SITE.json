@@ -248,7 +248,7 @@
       ]
     }
   ],
-  "source": "Somente apostilas de Isabela e Redação v3; 3 treinos adicionais de LC não incluídos.",
+  "source": "Somente apostilas de você e Redação v3; 3 treinos adicionais de LC não incluídos.",
   "testing": {
     "functional": "Node.js + jsdom; não navegador real",
     "preview": "WeasyPrint HTML/CSS estático; não screenshot",
@@ -266,7 +266,7 @@
   "facsimileImages": 609,
   "uiFont": "Inter variável local, OFL",
   "localStorageKeysPreserved": true,
-  "newLearningKey": "isabela.enem.2027.learning.v2",
+  "newLearningKey": "meuenem.enem.2027.learning.v2",
   "questionMetadataUnchanged": true,
   "nativeConversion": {
     "total": 3364,
@@ -316,8 +316,8 @@
   "phase3DetailedSummaries": 130,
   "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
-    "isabela.enem.2027.simulados.v1",
-    "isabela.enem.2027.plano.v1"
+    "meuenem.enem.2027.simulados.v1",
+    "meuenem.enem.2027.plano.v1"
   ],
   "phase3Features": [
     "builder por matéria/assunto/TRI/quantidade",
@@ -643,5 +643,25 @@
         "note": "400 000 é acréscimo sobre um básico; total 500 000. Leitura explicitada, não interpretação única nem justificativa oficial."
       }
     ]
+  },
+  "v3_1": {
+    "repertories": 206,
+    "newRepertoriesWithSource": 147,
+    "videos": 7925,
+    "channels": 29,
+    "videoScope": "Até 300 uploads recentes por canal; não exaustivo",
+    "videoThumbnailsLocal": true,
+    "thumbnailSheets": 29,
+    "motivatorImages": 29,
+    "themes": 100,
+    "customSimYearsDefault": [
+      2015,
+      2025
+    ],
+    "profileOptional": true,
+    "legacyStorageMigration": "Por sufixo, sem apagar originais",
+    "personalDefaultsRemoved": true,
+    "officialQuotePrivacyAbbreviation": "LC 2018 Q23: nome de personagem abreviado I., com nota editorial",
+    "qa": "Node/jsdom; prévias estáticas WeasyPrint, não navegador real"
   }
 }
