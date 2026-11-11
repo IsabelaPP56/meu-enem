@@ -1,4 +1,4 @@
-MEU ENEM — ISABELA • 130 RESUMOS + RESOLUÇÕES 2021–2025 EM EXPANSÃO
+MEU ENEM — ISABELA • 130 RESUMOS + 900 EXPLICAÇÕES 2021–2025 CONCLUÍDAS
 
 COMO ABRIR
 Mantenha toda a pasta junta e abra index.html em um navegador atualizado. Funciona sem servidor e sem internet. Alguns apps de arquivos do celular mostram apenas uma prévia: abra num navegador que execute HTML. Não há IA, login, ranking, pontos, anúncios ou envio de dados. A fonte Inter é local, com licença OFL. YouTube e referências externas precisam de internet e abrem separadamente.
@@ -45,16 +45,16 @@ Fase 4 (PPL/reaplicação/Digital e expansão oficial) NÃO iniciada.
 QA: Node/jsdom, conferência de metadados/arquivos e prévias estáticas HTML/CSS com WeasyPrint. As imagens em site_prints_v2 são PRÉVIAS ESTÁTICAS, não capturas de um navegador real; confira também Chrome/Safari em celular antes de publicar. A pasta de prévias/relatórios fica fora do deploy.
 
 RESOLUÇÕES — ATUALIZAÇÃO DO RECORTE
-900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 719 explicações (713 resoluções e 6 análises de anuladas) detalhadas: 40 do piloto e 679 em dezesseis pacotes por área/ano, incluindo questões em fac-símile. Restam 181: 180 de 2021 ainda não trabalhadas e uma de 2022 retida por ambiguidade de interpretação. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
-As 679 explicações de expansão são carregadas por área/ano em data/resolucoes/ somente após conferir a resposta ou abrir resultado finalizado (anuladas podem mostrar análise conceitual ao abrir, pois não têm resposta pontuada). Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
+900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 900 explicações (893 resoluções e 7 análises de anuladas) detalhadas: 40 do piloto e 860 em vinte pacotes por área/ano, incluindo questões em fac-símile. Restam 0 no recorte 2021–2025. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
+As 860 explicações de expansão são carregadas por área/ano em data/resolucoes/ somente após conferir a resposta ou abrir resultado finalizado (anuladas podem mostrar análise conceitual ao abrir, pois não têm resposta pontuada). Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
 
 RESUMOS AUTORAIS — ATUALIZAÇÃO
 Biblioteca no menu Resumos; filtros por área/matéria/disponibilidade e busca. Capítulos publicados em ordem de incidência do banco, sem estimar o futuro ENEM. Botões levam ao filtro exato do assunto; questões e caderno de erros também dão acesso ao resumo quando disponível. Ler não altera progresso. Fontes externas e YouTube precisam de internet; capítulos e questões não.
 
-ATUALIZAÇÃO — LOTE 2022
-177 explicações novas: 45 Linguagens, 45 Humanas, 44 Natureza e 43 Matemática; duas anteriores de 2022 preservadas. Cobertura de 2022: 179/180 (178 com letra e uma análise de anulada, MT Q157).
-2025, 2024 e 2023 permanecem completos, 180/180 em cada ano. Total disponível: 719/900; 2021 continua com 180 pendentes.
-Retida para revisão, SEM resolução detalhada publicada: Matemática 2022 Q145/M010. A proporção fornece 500 000 moedas totais, opção ausente. O gabarito E=400 000 é compatível com acréscimo sobre um pacote básico, mas o comando não explicita inequivocamente essa referência; sobre dois básicos seriam 300 000. Não se impôs uma premissa para fabricar demonstração. A questão, o comentário anterior e o gabarito oficial E permanecem intactos.
-Anuladas não recebem letra nem motivo oficial inventado. As explicações são autorais, conferidas contra o gabarito, e não produzidas pelo Inep.
-Preservado o radical √28 de MT 2023 Q161/M798. Não mudaram banco, TRI, localStorage, interface, resumos ou pacotes anteriores. Nenhuma imagem nova no deploy.
-Não há IA ou novas dependências de internet para estudar. Vídeos e fontes externas precisam de internet.
+ATUALIZAÇÃO — RECORTE 2021–2025 CONCLUÍDO
+Lote final: 180 explicações de 2021, 45 por área, mais a revisão de MT 2022 Q145/M010. Total: 900/900, 225 por área e 180 por ano; 893 com letra oficial e sete análises de anuladas, sem letra ou pontuação. Zero pendências retidas.
+MT 2022 Q145/M010: E=400 000 é o ACRÉSCIMO sobre UM pacote básico de 100 000 moedas. O total proporcional é 500 000, com 10 000 gemas. DOIS básicos são a referência das gemas; sobre dois, o acréscimo de moedas seria 300 000. Essa leitura é explicitada, sem alegar interpretação única ou justificativa oficial do Inep.
+Em CN 2021 Q98 e Q121, limites dos modelos simplificados são explicitados: a circulação fetal não é anatomicamente a de um peixe; baixa letalidade não é relógio universal de coevolução.
+Anuladas não recebem letra nem motivo oficial inventado. Resoluções autorais, não produzidas pelo Inep. Em 2021 e 2023, documentos do segundo dia foram consultados em reprodução fiel do PDF INEP no fisica.net, com procedência na resolução.
+Preservados o radical √28 de MT 2023 Q161/M798 e as correções editoriais de MT 2022. Banco, TRI, IDs, localStorage, interface, resumos e pacotes de 2023–2025 não mudaram. Nenhuma imagem nova no deploy.
+Nenhum push/publicação realizado. Prévias estáticas (jsdom + WeasyPrint), não capturas de Chrome. Revisão docente independente recomendada.
