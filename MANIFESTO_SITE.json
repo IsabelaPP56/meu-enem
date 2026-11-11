@@ -310,9 +310,9 @@
   },
   "phase3Started": true,
   "phase4Started": false,
-  "siteBytes": 72513655,
+  "siteBytes": 72849872,
   "phase3Completed": false,
-  "phase3DetailedResolutions": 542,
+  "phase3DetailedResolutions": 719,
   "phase3DetailedSummaries": 130,
   "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
@@ -331,28 +331,28 @@
     "propostas de dois blocos somente após aceite",
     "piloto de 40 resoluções com passos e análise A–E, selo e filtro",
     "resumos autorais completos: 130 capítulos, 56.480 palavras, prática e referências",
-    "resoluções recentes sob demanda: 502 em doze pacotes; 542 explicações no total, incluindo 5 anuladas"
+    "resoluções recentes sob demanda: 679 em dezesseis pacotes; 719 explicações no total, incluindo 6 anuladas; uma de 2022 retida para revisão"
   ],
   "phase3b": {
     "counts": {
       "matematica": {
         "questions": 833,
-        "detailed": 136,
+        "detailed": 179,
         "officialB": 749
       },
       "linguagens": {
         "questions": 804,
-        "detailed": 135,
+        "detailed": 180,
         "officialB": 755
       },
       "natureza": {
         "questions": 865,
-        "detailed": 136,
+        "detailed": 180,
         "officialB": 745
       },
       "humanas": {
         "questions": 862,
-        "detailed": 135,
+        "detailed": 180,
         "officialB": 758
       }
     },
@@ -360,7 +360,7 @@
       "2025": 180,
       "2024": 180,
       "2023": 180,
-      "2022": 2,
+      "2022": 179,
       "2021": 0
     },
     "officialKeyMirrorItems": [
@@ -471,7 +471,9 @@
     "resolutions2023Completed": true,
     "sharedFormulaRepairs": [
       "matematica:M798"
-    ]
+    ],
+    "resolutions2022Completed": false,
+    "resolutions2022Available": 179
   },
   "resolutionScope": {
     "years": [
@@ -482,24 +484,24 @@
       2025
     ],
     "questions": 900,
-    "resolved": 542,
-    "pending": 358,
+    "resolved": 719,
+    "pending": 181,
     "byArea": {
       "matematica": {
         "scope": 225,
-        "resolved": 136
+        "resolved": 179
       },
       "linguagens": {
         "scope": 225,
-        "resolved": 135
+        "resolved": 180
       },
       "natureza": {
         "scope": 225,
-        "resolved": 136
+        "resolved": 180
       },
       "humanas": {
         "scope": 225,
-        "resolved": 135
+        "resolved": 180
       }
     },
     "byYear": {
@@ -517,25 +519,36 @@
       },
       "2022": {
         "scope": 180,
-        "resolved": 2
+        "resolved": 179
       },
       "2021": {
         "scope": 180,
         "resolved": 0
       }
     },
-    "newLazyLoaded": 502,
+    "newLazyLoaded": 679,
     "legacyEagerPilot": 40,
-    "flaggedUncertain": 0,
+    "flaggedUncertain": 1,
     "annulled": 7,
-    "validResolutions": 537,
-    "annulledAnalyses": 5,
-    "pendingValid": 356,
-    "pendingAnnulled": 2,
+    "validResolutions": 713,
+    "annulledAnalyses": 6,
+    "pendingValid": 180,
+    "pendingAnnulled": 1,
     "completedYears": [
       2025,
       2024,
       2023
+    ],
+    "heldForReview": [
+      {
+        "key": "matematica:M010",
+        "year": 2022,
+        "number": 145,
+        "officialAnswer": "E",
+        "status": "retida — ambiguidade entre total e acréscimo",
+        "reason": "A proporção fornece 10 000 gemas e 500 000 moedas totais, opção ausente. E (400 000) é compatível somente com acréscimo sobre um pacote básico (100 000); acréscimo sobre dois básicos daria D (300 000). A referência do acréscimo não é inequívoca no comando. Não publicar uma justificativa como única sem validar a interpretação. Gabarito oficial do banco preservado.",
+        "resolutionPublished": false
+      }
     ]
   }
 }
