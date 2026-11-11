@@ -310,9 +310,9 @@
   },
   "phase3Started": true,
   "phase4Started": false,
-  "siteBytes": 71577389,
+  "siteBytes": 72513655,
   "phase3Completed": false,
-  "phase3DetailedResolutions": 195,
+  "phase3DetailedResolutions": 542,
   "phase3DetailedSummaries": 130,
   "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
@@ -331,43 +331,129 @@
     "propostas de dois blocos somente após aceite",
     "piloto de 40 resoluções com passos e análise A–E, selo e filtro",
     "resumos autorais completos: 130 capítulos, 56.480 palavras, prática e referências",
-    "resoluções recentes sob demanda: 155 em quatro pacotes; 195 explicações no total, incluindo 3 anuladas"
+    "resoluções recentes sob demanda: 502 em doze pacotes; 542 explicações no total, incluindo 5 anuladas"
   ],
   "phase3b": {
     "counts": {
       "matematica": {
         "questions": 833,
-        "detailed": 50,
+        "detailed": 136,
         "officialB": 749
       },
       "linguagens": {
         "questions": 804,
-        "detailed": 48,
+        "detailed": 135,
         "officialB": 755
       },
       "natureza": {
         "questions": 865,
-        "detailed": 51,
+        "detailed": 136,
         "officialB": 745
       },
       "humanas": {
         "questions": 862,
-        "detailed": 46,
+        "detailed": 135,
         "officialB": 758
       }
     },
     "years": {
       "2025": 180,
-      "2024": 9,
-      "2023": 4,
+      "2024": 180,
+      "2023": 180,
       "2022": 2,
       "2021": 0
     },
     "officialKeyMirrorItems": [
+      "matematica:M008",
+      "matematica:M009",
+      "matematica:M121",
+      "matematica:M122",
+      "matematica:M123",
+      "matematica:M172",
+      "matematica:M206",
+      "matematica:M207",
+      "matematica:M231",
+      "matematica:M232",
+      "matematica:M263",
+      "matematica:M264",
+      "matematica:M265",
+      "matematica:M287",
+      "matematica:M304",
+      "matematica:M325",
+      "matematica:M326",
+      "matematica:M327",
+      "matematica:M341",
+      "matematica:M370",
+      "matematica:M399",
+      "matematica:M417",
+      "matematica:M418",
+      "matematica:M430",
+      "matematica:M441",
+      "matematica:M442",
+      "matematica:M482",
+      "matematica:M536",
+      "matematica:M554",
+      "matematica:M555",
+      "matematica:M556",
+      "matematica:M557",
+      "matematica:M643",
+      "matematica:M644",
+      "matematica:M645",
+      "matematica:M646",
       "matematica:M702",
-      "natureza:N625",
+      "matematica:M703",
+      "matematica:M704",
+      "matematica:M705",
+      "matematica:M781",
+      "matematica:M791",
+      "matematica:M797",
+      "matematica:M798",
+      "matematica:M813",
+      "natureza:N010",
+      "natureza:N011",
+      "natureza:N012",
+      "natureza:N104",
+      "natureza:N105",
+      "natureza:N154",
+      "natureza:N155",
+      "natureza:N156",
+      "natureza:N157",
+      "natureza:N192",
+      "natureza:N193",
+      "natureza:N249",
+      "natureza:N250",
+      "natureza:N251",
+      "natureza:N271",
+      "natureza:N295",
+      "natureza:N329",
+      "natureza:N378",
+      "natureza:N379",
+      "natureza:N380",
+      "natureza:N381",
+      "natureza:N456",
       "natureza:N457",
-      "natureza:N799"
+      "natureza:N458",
+      "natureza:N459",
+      "natureza:N460",
+      "natureza:N500",
+      "natureza:N501",
+      "natureza:N587",
+      "natureza:N609",
+      "natureza:N610",
+      "natureza:N624",
+      "natureza:N625",
+      "natureza:N675",
+      "natureza:N676",
+      "natureza:N677",
+      "natureza:N678",
+      "natureza:N743",
+      "natureza:N744",
+      "natureza:N745",
+      "natureza:N798",
+      "natureza:N799",
+      "natureza:N824",
+      "natureza:N833",
+      "natureza:N834"
     ],
     "sharedStatementRepairs": [
       "linguagens:L331",
@@ -380,7 +466,12 @@
     "summariesPending": 0,
     "publishedSummaries": 130,
     "pendingSummaries": 0,
-    "resolutions2025Completed": true
+    "resolutions2025Completed": true,
+    "resolutions2024Completed": true,
+    "resolutions2023Completed": true,
+    "sharedFormulaRepairs": [
+      "matematica:M798"
+    ]
   },
   "resolutionScope": {
     "years": [
@@ -391,24 +482,24 @@
       2025
     ],
     "questions": 900,
-    "resolved": 195,
-    "pending": 705,
+    "resolved": 542,
+    "pending": 358,
     "byArea": {
       "matematica": {
         "scope": 225,
-        "resolved": 50
+        "resolved": 136
       },
       "linguagens": {
         "scope": 225,
-        "resolved": 48
+        "resolved": 135
       },
       "natureza": {
         "scope": 225,
-        "resolved": 51
+        "resolved": 136
       },
       "humanas": {
         "scope": 225,
-        "resolved": 46
+        "resolved": 135
       }
     },
     "byYear": {
@@ -418,11 +509,11 @@
       },
       "2024": {
         "scope": 180,
-        "resolved": 9
+        "resolved": 180
       },
       "2023": {
         "scope": 180,
-        "resolved": 4
+        "resolved": 180
       },
       "2022": {
         "scope": 180,
@@ -433,27 +524,18 @@
         "resolved": 0
       }
     },
-    "newLazyLoaded": 155,
+    "newLazyLoaded": 502,
     "legacyEagerPilot": 40,
     "flaggedUncertain": 0,
     "annulled": 7,
-    "validLetterResolutions": 192,
-    "annulledAnalyzed": 3,
-    "latestYearComplete": 2025,
-    "latestYearCoverage": {
-      "questions": 180,
-      "validLetterResolutions": 177,
-      "annulledAnalyzed": 3,
-      "allFourAreasComplete": true
-    },
-    "thisIncrement": {
-      "new": 145,
-      "byArea": {
-        "matematica": 40,
-        "linguagens": 28,
-        "natureza": 41,
-        "humanas": 36
-      }
-    }
+    "validResolutions": 537,
+    "annulledAnalyses": 5,
+    "pendingValid": 356,
+    "pendingAnnulled": 2,
+    "completedYears": [
+      2025,
+      2024,
+      2023
+    ]
   }
 }

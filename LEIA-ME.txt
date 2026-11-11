@@ -39,19 +39,21 @@ Dados ficam neste navegador/origem, sem sincronização. Mudar aparelho, navegad
 
 ENTREGUE / PRÓXIMA ETAPA
 Entregue agora: revisão segura dos itens sinalizados, simulados, histórico/resultados e Meu plano com métodos/evidências.
-Entregue no piloto 3B: 40 resoluções autorais (10 por área, ENEM 2022–2025), com passo a passo e análise de A–E. Selo e filtro “Resolução detalhada”; tente antes de ler. A explicação só aparece após conferir no banco ou finalizar o simulado. Gabaritos conferidos nos documentos oficiais; 4 de 2023 usam reprodução do PDF INEP no fisica.net, explicitada na tela. Também foram completados os textos comuns das questões 6–10 de Linguagens 2025 com as 45 linhas originais.
+Entregue no piloto 3B: 40 resoluções autorais (10 por área, ENEM 2022–2025), com passo a passo e análise de A–E. Selo e filtro “Resolução detalhada”; tente antes de ler. A explicação só aparece após conferir no banco ou finalizar o simulado. Gabaritos conferidos nos documentos oficiais; os documentos do segundo dia de 2023 usam reprodução do PDF INEP no fisica.net, explicitada na tela. Também foram completados os textos comuns das questões 6–10 de Linguagens 2025 com as 45 linhas originais.
 Resumos: 130/130 publicados, com conceitos, mecanismos/fórmulas, exemplos autorais, pegadinhas, método, prática e referências. Restam 0 em preparação. Comentários originais das apostilas continuam disponíveis.
 Fase 4 (PPL/reaplicação/Digital e expansão oficial) NÃO iniciada.
 QA: Node/jsdom, conferência de metadados/arquivos e prévias estáticas HTML/CSS com WeasyPrint. As imagens em site_prints_v2 são PRÉVIAS ESTÁTICAS, não capturas de um navegador real; confira também Chrome/Safari em celular antes de publicar. A pasta de prévias/relatórios fica fora do deploy.
 
 RESOLUÇÕES — ATUALIZAÇÃO DO RECORTE
-900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 195 explicações (192 resoluções e 3 análises de anuladas) detalhadas: 40 do piloto e 155 em quatro pacotes por área/ano, incluindo questões em fac-símile. Restam 705, ainda não revisadas para resolução detalhada; isso não significa que sejam incertas. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
-As 155 explicações de expansão são carregadas por área/ano em data/resolucoes/ somente após conferir a resposta ou abrir resultado finalizado (anuladas podem mostrar análise conceitual ao abrir, pois não têm resposta pontuada). Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
+900 questões de 2021–2025 (225 por área, incluindo 7 anuladas). Há 542 explicações (537 resoluções e 5 análises de anuladas) detalhadas: 40 do piloto e 502 em doze pacotes por área/ano, incluindo questões em fac-símile. Restam 358, ainda não revisadas para resolução detalhada; isso não significa que sejam incertas. Nenhuma resolução incerta foi publicada neste lote. As 7 anuladas não recebem letra inventada.
+As 502 explicações de expansão são carregadas por área/ano em data/resolucoes/ somente após conferir a resposta ou abrir resultado finalizado (anuladas podem mostrar análise conceitual ao abrir, pois não têm resposta pontuada). Mantenha a pasta completa ao copiar o site. O índice leve preserva selos e filtros sem carregar as explicações novas na abertura. Os 40 textos do piloto continuam no pacote inicial por compatibilidade. Erro de leitura do pacote mostra aviso e botão de nova tentativa, sem apagar progresso. Não foram acrescentadas resoluções de anos anteriores a 2021.
 
 RESUMOS AUTORAIS — ATUALIZAÇÃO
 Biblioteca no menu Resumos; filtros por área/matéria/disponibilidade e busca. Capítulos publicados em ordem de incidência do banco, sem estimar o futuro ENEM. Botões levam ao filtro exato do assunto; questões e caderno de erros também dão acesso ao resumo quando disponível. Ler não altera progresso. Fontes externas e YouTube precisam de internet; capítulos e questões não.
 
-ATUALIZAÇÃO — RESOLUÇÕES DE 2025 CONCLUÍDAS
-As quatro áreas de 2025 têm 45 explicações cada: 177 questões com letra válida + 3 análises didáticas de anuladas, sem letra e sem pontuação.
-No recorte 2021–2025: 195 explicações disponíveis, 705 pendentes. 145 novas nesta atualização. As explicações de expansão carregam por área/ano após a correção; as 40 do piloto continuam no pacote inicial.
-Não há IA, dependências de internet para estudar ou alteração das chaves de progresso. Links de vídeo e fontes externas precisam de internet.
+ATUALIZAÇÃO — 2025, 2024 E 2023 CONCLUÍDOS
+Cada ano tem 45 explicações por área, totalizando 540. Somadas a duas de 2022, são 542 disponíveis: 537 com letra oficial e 5 análises de anuladas, sem letra nem pontuação. Restam 358: 178 de 2022 e 180 de 2021.
+Também foi restaurado o radical √28 no enunciado nativo de MT 2023 Q161/M798, conferido na página 24 do PDF oficial. Não se alteraram sua letra nem seu parâmetro TRI.
+Esta atualização adiciona 347 textos: 171 de 2024 e 176 de 2023. Os 13 textos anteriores desses anos foram preservados.
+Ressalvas didáticas explícitas: margem de lucro em MT 2024 Q143; exclusão do deslocamento nulo na cifra em MT 2024 Q169; fertilidade na síndrome de Down em CN 2023 Q125; modelo simplificado de recepção em CN 2023 Q128. Não se alteraram enunciados nem letras oficiais.
+Não há IA ou novas dependências de internet para estudar. Vídeos e fontes externas precisam de internet.
