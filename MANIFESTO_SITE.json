@@ -17,39 +17,67 @@
     "Difícil": 1014,
     "sem dado": 357
   },
-  "assetFiles": 3808,
+  "assetFiles": 3993,
   "areas": [
     {
       "area": "matematica",
       "title": "Matemática",
       "count": 833,
       "pages": 1025,
-      "imageBytes": 21820280,
-      "width": 850
+      "imageBytes": 17730128,
+      "imageFiles": 1888,
+      "nativeConversion": {
+        "total": 833,
+        "native": 652,
+        "originalDefault": 181,
+        "incompleteNativeAlternatives": 34,
+        "officialB": 749
+      }
     },
     {
       "area": "linguagens",
       "title": "Linguagens",
       "count": 804,
       "pages": 835,
-      "imageBytes": 23104966,
-      "width": 800
+      "imageBytes": 12175534,
+      "imageFiles": 410,
+      "nativeConversion": {
+        "total": 804,
+        "native": 726,
+        "originalDefault": 78,
+        "incompleteNativeAlternatives": 0,
+        "officialB": 755
+      }
     },
     {
       "area": "natureza",
       "title": "Natureza",
       "count": 865,
       "pages": 1055,
-      "imageBytes": 24731378,
-      "width": 800
+      "imageBytes": 16917110,
+      "imageFiles": 1328,
+      "nativeConversion": {
+        "total": 865,
+        "native": 713,
+        "originalDefault": 152,
+        "incompleteNativeAlternatives": 13,
+        "officialB": 745
+      }
     },
     {
       "area": "humanas",
       "title": "Humanas",
       "count": 862,
       "pages": 893,
-      "imageBytes": 22798034,
-      "width": 850
+      "imageBytes": 10987994,
+      "imageFiles": 367,
+      "nativeConversion": {
+        "total": 862,
+        "native": 777,
+        "originalDefault": 85,
+        "incompleteNativeAlternatives": 0,
+        "officialB": 758
+      }
     }
   ],
   "sampledAnswerKeys": [
@@ -221,5 +249,133 @@
     }
   ],
   "source": "Somente apostilas de Isabela e Redação v3; 3 treinos adicionais de LC não incluídos.",
-  "testing": "Node.js + jsdom; prévias HTML/CSS renderizadas com WeasyPrint, não capturas de navegador."
+  "testing": {
+    "functional": "Node.js + jsdom; não navegador real",
+    "preview": "WeasyPrint HTML/CSS estático; não screenshot",
+    "imageFilesDecoded": 3993,
+    "imageErrors": 0,
+    "realBrowserQAStillNeeded": true
+  },
+  "version": "3A-local-2026-11-10",
+  "phase": "Fase 3B: 40 resoluções e resumos autorais parciais",
+  "questionsUnchanged": false,
+  "channels": 29,
+  "repertoryCards": 59,
+  "repertoryCatalog": 49,
+  "sourceSupports": 10,
+  "facsimileImages": 609,
+  "uiFont": "Inter variável local, OFL",
+  "localStorageKeysPreserved": true,
+  "newLearningKey": "isabela.enem.2027.learning.v2",
+  "questionMetadataUnchanged": true,
+  "nativeConversion": {
+    "total": 3364,
+    "nativeWithoutAutomatedFlags": 2868,
+    "originalDefault": 496,
+    "previouslyFlagged": 555,
+    "conservativelyRepaired": 59,
+    "incompleteNativeAlternativesProtected": 47,
+    "counts": {
+      "matematica": {
+        "total": 833,
+        "native": 652,
+        "originalDefault": 181,
+        "incompleteNativeAlternatives": 34,
+        "officialB": 749
+      },
+      "linguagens": {
+        "total": 804,
+        "native": 726,
+        "originalDefault": 78,
+        "incompleteNativeAlternatives": 0,
+        "officialB": 755
+      },
+      "natureza": {
+        "total": 865,
+        "native": 713,
+        "originalDefault": 152,
+        "incompleteNativeAlternatives": 13,
+        "officialB": 745
+      },
+      "humanas": {
+        "total": 862,
+        "native": 777,
+        "originalDefault": 85,
+        "incompleteNativeAlternatives": 0,
+        "officialB": 758
+      }
+    },
+    "manualReviewOfAllQuestions": false,
+    "additionalSharedStatementRepairs": 5
+  },
+  "phase3Started": true,
+  "phase4Started": false,
+  "siteBytes": 71211255,
+  "phase3Completed": false,
+  "phase3DetailedResolutions": 40,
+  "phase3DetailedSummaries": 40,
+  "phase3Pending": "90 resumos autorais e homologação em navegador real",
+  "newPhase3Keys": [
+    "isabela.enem.2027.simulados.v1",
+    "isabela.enem.2027.plano.v1"
+  ],
+  "phase3Features": [
+    "builder por matéria/assunto/TRI/quantidade",
+    "presets mini 10/20, área 45, ano disponível sem duplicação",
+    "cronômetro/pause/retomada",
+    "histórico de até 40 sessões e refazer",
+    "fortes/fracos e análise por TRI/confiança/erro",
+    "indicador experimental explicitamente não equivalente ao ENEM",
+    "rotina, grade exata até novembro 2027, marcação, edição e impressão",
+    "métodos por matéria e evidências reais",
+    "propostas de dois blocos somente após aceite",
+    "piloto de 40 resoluções com passos e análise A–E, selo e filtro"
+  ],
+  "phase3b": {
+    "counts": {
+      "matematica": {
+        "questions": 833,
+        "detailed": 10,
+        "officialB": 749
+      },
+      "linguagens": {
+        "questions": 804,
+        "detailed": 10,
+        "officialB": 755
+      },
+      "natureza": {
+        "questions": 865,
+        "detailed": 10,
+        "officialB": 745
+      },
+      "humanas": {
+        "questions": 862,
+        "detailed": 10,
+        "officialB": 758
+      }
+    },
+    "years": {
+      "2025": 25,
+      "2024": 9,
+      "2023": 4,
+      "2022": 2
+    },
+    "officialKeyMirrorItems": [
+      "matematica:M702",
+      "natureza:N625",
+      "natureza:N457",
+      "natureza:N799"
+    ],
+    "sharedStatementRepairs": [
+      "linguagens:L331",
+      "linguagens:L332",
+      "linguagens:L719",
+      "linguagens:L720",
+      "linguagens:L782"
+    ],
+    "browserQA": "Node/jsdom e prévias estáticas WeasyPrint; Chrome não homologado",
+    "summariesPending": 130,
+    "publishedSummaries": 40,
+    "pendingSummaries": 90
+  }
 }

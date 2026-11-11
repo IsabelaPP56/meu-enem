@@ -1,49 +1,48 @@
-MEU ENEM — O CANTINHO DA ISABELA
-Plataforma pessoal offline • ENEM 2027
+MEU ENEM — ISABELA • FASE 3B PARCIAL (40 RESOLUÇÕES DETALHADAS)
 
 COMO ABRIR
-1. Baixe o(s) ZIP(s) que você quer estudar e EXTRAIA os arquivos. Não abra o site dentro do ZIP.
-2. Abra a pasta ENEM_Isabela e dê dois cliques em index.html. Use um navegador atualizado (Chrome, Edge, Firefox ou Safari).
-3. Para ter as quatro áreas e Redação no mesmo site, extraia os seis ZIPs NA MESMA PASTA. Todos contêm a pasta ENEM_Isabela: una as pastas e aceite substituir os arquivos repetidos, que são idênticos.
+Mantenha toda a pasta junta e abra index.html em um navegador atualizado. Funciona sem servidor e sem internet. Alguns apps de arquivos do celular mostram apenas uma prévia: abra num navegador que execute HTML. Não há IA, login, ranking, pontos, anúncios ou envio de dados. A fonte Inter é local, com licença OFL. YouTube e referências externas precisam de internet e abrem separadamente.
+Nenhum push/publicação foi realizado. Os ZIPs antigos não foram regenerados: não substitua esta versão por eles.
 
-PACOTES POR ÁREA
-Matemática, Linguagens e Humanas: cada ZIP funciona sozinho com a área correspondente e com Redação. Natureza tem DUAS PARTES: extraia parte1 e parte2 NA MESMA PASTA antes de abrir; o site avisa se faltar uma delas. Essa divisão preserva a legibilidade dos diagramas sem ultrapassar o limite do anexo. Os cards das áreas ainda não extraídas avisam que falta o pacote.
-O ZIP Redação é uma versão leve com os 100 temas, o modelo base e os repertórios. Para o site completo, extraia todos no mesmo lugar.
-Mantenha index.html, app.js, style.css e as pastas data e assets juntos. Não renomeie nem separe as pastas.
-No celular, extraia antes e abra index.html em um navegador que execute arquivos HTML locais. Alguns aplicativos Arquivos mostram apenas uma prévia: isso não é o navegador completo. O comportamento de arquivos locais depende do sistema; computador e Chrome/Edge no Android são os caminhos mais diretos.
+QUESTÕES E REVISÃO DE FIDELIDADE
+3.364 questões das apostilas: 833 Matemática, 804 Linguagens (sem Espanhol), 865 Natureza e 862 Humanas. Nenhuma questão externa foi acrescentada. Mantidos IDs, anos, números, gabaritos, comentários, matérias, assuntos e parâmetros TRI.
+2.868 estão em texto real com figuras separadas, sem alertas automáticos; 496 usam o fac-símile completo POR PADRÃO para não expor uma extração duvidosa. Entre as 555 anteriormente sinalizadas, 59 tiveram alternativas textuais restauradas conservadoramente. As 47 com alternativas nativas incompletas estão entre as protegidas pelo original: seu texto nativo incompleto não aparece, nem no simulado. As imagens podem ser ampliadas.
+Isso não é uma revisão manual integral das 3.364 transcrições. Permanecem as ressalvas das apostilas, inclusive a validação mais limitada do gabarito de 2008. Os 3 exercícios autorais extras de Linguagens não entram no banco real solicitado.
+TRI visível: 3.007 itens com b oficial; 357 sem dado. Nunca se atribuiu dificuldade por palpite. Anuladas continuam identificadas no banco e não entram nos simulados.
 
-QUESTÕES
-Escolha a área; filtre matéria, submatéria, ano, TRI e progresso. Os selos coloridos exibem a TRI na lista e na questão. O parâmetro b oficial pode ser consultado no detalhe.
-Clique em A–E para conferir o gabarito e o comentário da apostila. Use Anterior, Próxima, Aleatória e Tentar novamente.
-Os recortes são fac-símiles das páginas das apostilas. Toque na imagem para ampliar; use Aumentar + e deslize para ler figuras, eixos e símbolos. Também há texto extraído para leitura; nas fórmulas e alternativas visuais, vale o fac-símile.
-As anuladas não têm alternativa válida e não entram na taxa de acerto. Você pode marcá-las como revisadas.
+TREINAR NO BANCO
+Filtre área, matéria, assunto, ano, TRI e situação. Marque A–E, registre Certeza/Dúvida/Chute e confira. O comentário continua sendo o da apostila. Classifique seu erro em Conteúdo, Interpretação ou Distração para receber orientação e acompanhar o desempenho.
+Erros e acertos por chute alimentam o caderno: intervalos de 1, 3, 7 e 15 dias entre revisões; erro/chute reinicia. Não existem notificações fora do site. A triagem de assuntos novos usa até 5 itens fáceis com b oficial; não é diagnóstico de domínio.
 
-PROGRESSO E PRIVACIDADE
-O site não precisa de servidor, login nem internet. Não tem anúncios, rastreamento, fontes remotas ou correção por IA.
-Respostas e rascunhos ficam no localStorage DESTE navegador. Outro navegador, outra pasta/endereço, aparelho ou janela anônima pode ter um armazenamento diferente. Limpar dados do navegador pode apagar os registros.
-Em Meu desempenho, veja acertos por área, matéria, submatéria e dificuldade. As porcentagens consideram a ÚLTIMA resposta de cada questão, não todas as tentativas. Itens anulados não entram no denominador de acerto.
-Use Exportar backup e Importar backup para guardar ou transferir respostas e rascunhos. O arquivo de backup contém os textos: guarde com cuidado. Se o navegador bloquear o armazenamento em arquivos locais, use os backups; haverá um aviso no site.
-Zerar progresso das questões não apaga rascunhos de Redação.
-O modo escuro é opcional. Os fac-símiles continuam com fundo branco para preservar as figuras.
+SIMULADOS
+Escolha matérias, assuntos (seleção múltipla), quantidade por matéria, TRI e duração. Sem assuntos selecionados, entram todos daquela matéria. Falta de itens gera aviso, nunca preenchimento silencioso com outro assunto. Há mini 10/20, área de 45 e prova disponível por ano.
+A prova por ano contém apenas o banco daquele ano: exclui anuladas/Espanhol e deduplica os itens interdisciplinares 2006–2008. Não inclui redação nem reproduz os dois dias oficiais. Confira a quantidade e ajuste o tempo sugerido antes de iniciar.
+Alternativas/confiança ficam salvas. Gabarito só ao finalizar; pausa esconde a questão. Sair da tela ou fechar normalmente pausa. O relógio é registrado a cada 10 segundos; encerramento inesperado pode perder até 10 segundos. O limite finaliza automaticamente.
+O resultado separa acertos, brancos, matéria, assunto, TRI, confiança e tipo de erro. Destaques fortes/fracos exigem pelo menos 3 respostas naquela amostra e não equivalem a domínio definitivo. Classificação do erro é observação sua, não diagnóstico automático.
+Até 40 simulados salvos, sem excluir automaticamente: exporte backup e exclua manualmente se chegar ao limite. Refazer cria outra tentativa, preservando o resultado anterior. Finalizar atualiza a última resposta no banco e o caderno de erros, sem alterar resultados anteriores.
+A estimativa numérica é OPCIONAL, fechada numa seção de aviso: modelo didático não calibrado, não nota ENEM/INEP e não previsão de aprovação. b sozinho não reproduz TRI. Usa hipóteses editoriais de discriminação/piso e escala, explicitadas na tela; mínimo de 10 respostas e itens com b por área. Padrões extremos/limites não geram número. Não use para decidir aprovação ou comparar com notas oficiais.
+
+MEU PLANO — ROTINA ANTES DA GRADE
+Os horários começam DESATIVADOS. Informe sua rotina de verdade: janelas e limite diário por dia, escola, compromissos, provas escolares, blocos/pausas, redação semanal e início/fim. Se a escola varia por dia, use compromissos fixos diferentes. Nenhum calendário externo é criado.
+A grade mostra horários exatos, subtrai tempos ocupados e não ultrapassa o limite diário (inclui pausas). Janelas de estudo entre 06:00 e 23:00. Blocos de 15–90 minutos; pausas de 0–20. Fases editoriais: Base até março/2027, Aprofundamento abril–agosto, Revisão setembro–novembro. 30/11/2027 é horizonte provisório, NÃO data oficial do ENEM. A meta semanal de redação arredonda para blocos completos e pode usar outro dia se não couber no preferido.
+As notas iniciais informadas (LC 570, CH 562, CN 560, MT 643, Redação 700) são editáveis. Frequência de assuntos do banco, notas das áreas objetivas e desempenho com amostra suficiente geram prioridades editoriais, não diagnóstico. A redação segue a meta semanal escolhida por você. Provas escolares recebem prioridade nos 7 dias anteriores; sem assunto reconhecido, a matéria inteira ganha prioridade, com aviso.
+Fora redação/pausas, cada bloco automático reserva pelo menos 60% a questões/recuperação; frequentemente é 100%. Videoaula é apoio curto. O tempo indicado é tempo RESERVADO, não duração verificada de um vídeo específico; o link busca o assunto em canal previamente conferido.
+Métodos específicos por matéria, com fontes reais e limites das evidências. Há links diretos para questões/caderno/redação. Pode marcar concluído, editar horário/atividade, dispensar/restaurar blocos e imprimir a grade exibida. Edições não podem sobrepor escola, compromissos, blocos/pausas nem exceder limite diário. Dia/matéria/assunto do bloco permanecem; redistribuição vem da rotina ou de proposta aceita.
+Resultados não mudam o plano sozinhos. Propostas mostram DOIS blocos futuros livres/editáveis dos próximos 14 dias e mantêm os mesmos horários. Só mudam ao aceitar. É possível desfazer preservando blocos concluídos e edições posteriores. Recalcular rotina pede confirmação e limpa edições pendentes; blocos concluídos mantêm seu registro. Se o novo horário conflitar com um concluído coincidente, o site pede desmarcá-lo antes.
 
 REDAÇÃO
-100 temas por eixo: 20 oficiais (2006–2025) + 80 elaborados para treino. Treinos NÃO são previsões do INEP.
-Cada tema tem seus próprios textos motivadores e rascunho. O contador estima linhas usando 65 caracteres por linha; a escrita à mão e a tela variam. Confira 30 linhas na folha definitiva.
-O cronômetro é opcional; pode iniciar, pausar e zerar. Ao sair da área, ele pausa e guarda o tempo.
-Copiar redação inclui o tema e o texto para você COLAR NO CHAT DO ENEM e pedir correção pelas 5 competências. Se a cópia automática for bloqueada, o site mostra o texto para copiar manualmente.
-Você também pode selecionar uma foto para conferência local. A foto NÃO é salva nem enviada pelo site. Envie a foto original da folha diretamente no chat para a correção.
-Não existe IA dentro desta versão offline; nenhum texto ou foto é enviado automaticamente.
+100 temas: 20 oficiais e 80 de treino; 49 repertórios + 10 apoios da v3, modelo base e biblioteca pesquisável. Rascunho/tempo por tema, contador aproximado (65 caracteres/linha). Copiar prepara tema e texto para COLAR NO CHAT DO ENEM. Foto é prévia local, não fica salva nem é enviada: mande o original no chat para correção das cinco competências. Não há IA na página.
 
-CONTEÚDO FECHADO DAS APOSTILAS
-Matemática: 833 questões reais.
-Linguagens: 804 questões reais, sem Espanhol. Os 3 exercícios autorais adicionais da apostila não foram incluídos, para manter a contagem real solicitada.
-Natureza: 865 questões reais.
-Humanas: 862 questões reais.
-Total: 3.364 questões reais, sem acréscimos externos.
-Redação v3: 100 temas, modelo base, 16 repertórios socioculturais e 33 teóricos.
-A seleção de 2006–2008 é editorial, pois as provas eram interdisciplinares; alguns itens podem aparecer em mais de uma área das apostilas.
-TRI: NU_PARAM_B oficial; Fácil/Média/Difícil são rótulos editoriais por tercis anuais, não pontos da questão. Sem parâmetro: sem dado.
-Enunciados, gabaritos, comentários e limitações são os das apostilas. Em 2008, o gabarito utilizado nas apostilas veio de reprodução textual indexada, com validação mais limitada. Nos motivadores oficiais da Redação v3, figuras já transcritas como descrições entre colchetes permanecem assim.
+DADOS E BACKUP
+Mantidas as chaves antigas de progresso, rascunhos, preferências e aprendizagem. Simulados e plano usam chaves novas aditivas. Exportar backup inclui tudo; importar backup antigo não apaga o plano/simulados existentes. Importe somente arquivos de confiança.
+Dados ficam neste navegador/origem, sem sincronização. Mudar aparelho, navegador, pasta/origem, modo anônimo ou limpar dados pode perder acesso ao progresso. Exporte regularmente e antes de trocar de versão; backups contêm seus textos e rotina. Zerar progresso não apaga redações/preferências nem elimina automaticamente históricos de simulados/plano; estes têm seus próprios controles/backup.
 
-BONS ESTUDOS, ISABELA!
-Uma questão. Uma descoberta. Um passo à frente.
+ENTREGUE / PRÓXIMA ETAPA
+Entregue agora: revisão segura dos itens sinalizados, simulados, histórico/resultados e Meu plano com métodos/evidências.
+Entregue no piloto 3B: 40 resoluções autorais (10 por área, ENEM 2022–2025), com passo a passo e análise de A–E. Selo e filtro “Resolução detalhada”; tente antes de ler. A explicação só aparece após conferir no banco ou finalizar o simulado. Gabaritos conferidos nos documentos oficiais; 4 de 2023 usam reprodução do PDF INEP no fisica.net, explicitada na tela. Também foram completados os textos comuns das questões 6–10 de Linguagens 2025 com as 45 linhas originais.
+Resumos: 32/130 publicados, com conceitos, mecanismos/fórmulas, exemplos autorais, pegadinhas, método, prática e referências. Restam 98 identificados como em preparação. Comentários originais das apostilas continuam disponíveis.
+Fase 4 (PPL/reaplicação/Digital e expansão oficial) NÃO iniciada.
+QA: Node/jsdom, conferência de metadados/arquivos e prévias estáticas HTML/CSS com WeasyPrint. As imagens em site_prints_v2 são PRÉVIAS ESTÁTICAS, não capturas de um navegador real; confira também Chrome/Safari em celular antes de publicar. A pasta de prévias/relatórios fica fora do deploy.
+
+RESUMOS AUTORAIS — ATUALIZAÇÃO
+Biblioteca no menu Resumos; filtros por área/matéria/disponibilidade e busca. Capítulos publicados em ordem de incidência do banco, sem estimar o futuro ENEM. Botões levam ao filtro exato do assunto; questões e caderno de erros também dão acesso ao resumo quando disponível. Ler não altera progresso. Fontes externas e YouTube precisam de internet; capítulos e questões não.
