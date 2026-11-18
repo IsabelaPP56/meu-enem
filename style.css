@@ -266,3 +266,19 @@ html:not([data-theme=dark]) .theme-kind.training{color:#73520c}
 .bar-label strong{color:#7a4f9a}
 /* matriz_c (18/11/2026): contraste pré-existente do item selecionado na lista do banco, modo claro (#766d81 sobre #f7f2fe = 4,47:1 → 5,69:1) */
 html:not([data-theme="dark"]) .question-item.selected small,html:not([data-theme="dark"]) .question-item.selected .question-status{color:#655d70}
+/* tri (18/11/2026): nota estimada no estilo TRI no resultado do simulado */
+.tri-panel{margin:0 0 22px;padding:22px 26px}
+@media (max-width:640px){.tri-panel{padding:18px 16px}}
+.tri-aviso{font-size:13px;line-height:1.5;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-left:5px solid var(--navy);border-radius:10px;padding:10px 14px;margin:6px 0 14px}
+.tri-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.tri-card{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--paper);color:var(--ink)}
+.tri-card h3{font-size:14px;margin:0 0 6px;color:var(--ink)}
+.tri-card h3 small{display:inline;font-weight:400;font-size:12px}
+.tri-nota{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin:0 0 4px}
+.tri-label{font-size:12px;color:var(--ink)}
+.tri-nota strong{font-size:26px;color:var(--ink)}
+.tri-badge{font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;background:#fff3d5;color:#6f4b00}
+.tri-card small{display:block;font-size:12px;line-height:1.45;color:var(--ink)}
+.tri-off p{font-size:13px;margin:0;color:var(--ink)}
+.tri-nota-rodape{font-size:12px;color:var(--ink);margin:12px 0 0;line-height:1.45}
+.tri-obs{font-size:12px;line-height:1.45;color:var(--ink);margin:8px 0 0;padding-top:8px;border-top:1px dashed var(--line)}

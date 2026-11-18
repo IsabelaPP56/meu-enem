@@ -578,6 +578,34 @@ window.MEU_ENEM_SUMMARIES.v2={index:rv2Index,load:rv2Load,jobs:rv2Jobs};
   if(t.hasAttribute('data-mx-clear')){delete state.filters.hab;state.qid=null;state.limit=50;render();return}
   const [a,h]=t.dataset.mxPractice.split(':');state.filters={subject:'',topic:'',year:'',tri:'',status:'all',search:'',hab:h};view('bank',a)});
  window.MEU_ENEM_MATRIZ={tags:mxTags,stats:mxStats,data:MX};
+ // 9) Nota estimada no estilo TRI (item 8, parte 2): 3PL + EAP no navegador, com os parâmetros dos itens publicados nos microdados do INEP.
+ //    É uma ESTIMATIVA: não reproduz a nota oficial (o INEP não publica a transformação exata nem corrige simulados).
+ const TRI=window.ENEM_TRI&&window.ENEM_TRI.q?window.ENEM_TRI:null;
+ const TRI_AREAS=['linguagens','humanas','natureza','matematica'];
+ function triGrid(){const g=TRI.grade,n=Math.round((g.max-g.min)/g.passo)+1,t=new Float64Array(n);for(let i=0;i<n;i++)t[i]=Math.round((g.min+i*g.passo)*1e4)/1e4;return t}
+ function triEAP(items,resp,D){const t=triGrid(),n=t.length,L=new Float64Array(n);for(let i=0;i<n;i++)L[i]=-t[i]*t[i]/2;
+  for(let j=0;j<items.length;j++){const a=items[j][0],b=items[j][1],c=items[j][2],x=resp[j];for(let i=0;i<n;i++){const p=c+(1-c)/(1+Math.exp(-D*a*(t[i]-b)));L[i]+=x?Math.log(p):Math.log(1-p)}}
+  let mx=-Infinity;for(let i=0;i<n;i++)if(L[i]>mx)mx=L[i];let sw=0,st=0;const w=new Float64Array(n);for(let i=0;i<n;i++){w[i]=Math.exp(L[i]-mx);sw+=w[i];st+=w[i]*t[i]}const th=st/sw;let v=0;for(let i=0;i<n;i++)v+=w[i]*(t[i]-th)*(t[i]-th);return{theta:th,dp:Math.sqrt(v/sw)}}
+ function triItem(area,id){const e=TRI&&(TRI.q[area]||{})[id];return e?{year:e[0],p:[e[1],e[2],e[3]],flag:e[4]}:null}
+ function triRequired(area,year){return Object.entries(TRI.q[area]||{}).filter(([id,e])=>e[0]===year&&e[4]!==2).map(([id])=>area+':'+id)}
+ // rows: [{key,choice,answer}] — mesma forma de s.results. Em branco conta como erro (como no ENEM).
+ function triArea(area,rows){const qs=rows.map(r=>getQ(r.key)).filter(Boolean);if(!qs.length)return null;const years=[...new Set(qs.map(q=>q.year))];
+  if(qs.some(q=>q.edition)||years.length!==1)return{area,status:'misto'};const year=years[0];if(year<2009)return{area,year,status:'pre2009'};
+  const have=new Set(rows.map(r=>r.key)),req=triRequired(area,year);if(req.length<30||req.some(k=>!have.has(k)))return{area,year,status:'incompleta',faltam:req.filter(k=>!have.has(k)).length};
+  if(!rows.some(r=>r.choice))return{area,year,status:'branco',nota:0};
+  const items=[],resp=[],est=[],fora=[];let acertos=0;
+  for(const r of rows){const q=getQ(r.key),it=triItem(area,q.id);if(!it||it.flag===2){fora.push(q);continue}items.push(it.p);const ok=r.choice&&r.choice===r.answer?1:0;resp.push(ok);acertos+=ok;if(it.flag===1)est.push(q)}
+  const S=TRI.escala[area],e=triEAP(items,resp,S.D);return{area,year,status:'ok',nota:S.m+S.s*e.theta,theta:e.theta,dp:e.dp,itens:items.length,oficiais:items.length-est.length,estimados:est,fora,acertos}}
+ function triSession(s){if(!TRI||!s?.results?.length)return[];const by={};for(const r of s.results){const a=r.area||getQ(r.key)?.area;if(TRI_AREAS.includes(a))(by[a]=by[a]||[]).push(r)}return TRI_AREAS.filter(a=>by[a]).map(a=>triArea(a,by[a])).filter(Boolean)}
+ const triNum=(x,d=1)=>x.toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d});
+ const triQs=l=>l.map(q=>q.number).join(', ');
+ function triCard(r){const nome=esc(AREAS.find(a=>a.id===r.area)?.name||r.area);
+  if(r.status!=='ok')return'<div class="tri-card tri-off"><h3>'+nome+(r.year?' <small>· ENEM '+r.year+'</small>':'')+'</h3><p>'+(r.status==='pre2009'?'Provas de '+r.year+' são anteriores à TRI no ENEM (adotada em 2009): sem nota estimada.':r.status==='branco'?'Nenhuma resposta nesta área. Pela regra do INEP, a prova toda em branco recebe nota zero.':r.status==='incompleta'?'Faltam '+r.faltam+' questão(ões) da prova de '+r.year+' nesta sessão: a estimativa só é feita com a área completa.':'A sessão mistura anos ou edições: sem nota estimada.')+'</p></div>';
+  return'<div class="tri-card"><h3>'+nome+' <small>· ENEM '+r.year+'</small></h3><p class="tri-nota"><span class="tri-label">Nota estimada</span><strong>≈ '+triNum(r.nota)+'</strong>'+(r.estimados.length?'<span class="tri-badge">estimativa</span>':'')+'</p><small>'+r.acertos+' acertos em '+r.itens+' itens calculados · '+r.oficiais+' com parâmetro oficial do INEP'+(r.estimados.length?' · '+r.estimados.length+' com parâmetro estimado, marcado como estimativa (questão '+triQs(r.estimados)+')':'')+(r.fora.length?' · '+r.fora.length+' fora do cálculo, porque o INEP retirou o item da correção (questão '+triQs(r.fora)+')':'')+'</small>'+(TRI.avisos?.[r.area]?.[r.year]?'<p class="tri-obs">'+esc(TRI.avisos[r.area][r.year])+'</p>':'')+'</div>'}
+ function triPanel(s){const res=triSession(s);if(!res.length)return'';const full=s.config?.kind==='year';if(!full&&!res.some(r=>r.status==='ok'||r.status==='pre2009'))return'';const V=TRI.validacao;
+  return'<section class="panel tri-panel" id="nota-tri" aria-labelledby="tri-title"><h2 id="tri-title">Nota estimada no estilo TRI</h2><p class="tri-aviso" role="note"><strong>Estimativa — não é a nota oficial do INEP.</strong> Calculada no seu navegador, sem enviar dados, com o modelo de 3 parâmetros e os parâmetros dos itens publicados nos microdados do INEP. Use só como referência de treino: no dia da prova contam o caderno, as condições e a correção oficial.</p><div class="tri-grid">'+res.map(triCard).join('')+'</div><p class="tri-nota-rodape">'+esc(V.resumo)+' Questões em branco contam como erro. Itens marcados “estimativa” não têm parâmetro oficial casado com segurança e usam valores aproximados.</p></section>'}
+ if(TRI){const triOldResult=p3RenderResult;p3RenderResult=function(){triOldResult();const s=p3Session();if(!s?.results?.length||$('#nota-tri'))return;const html=triPanel(s),qs=$('#main .quick-stats');if(html&&qs)qs.insertAdjacentHTML('afterend',html)};
+  window.MEU_ENEM_TRI={eap:triEAP,area:triArea,session:triSession,grid:triGrid}}
  Object.assign(window.MEU_ENEM_APP,{render,filtered});
  render();if(!storageOK)toast('Armazenamento local indisponível: use Exportar backup para guardar seu progresso.');
 })();

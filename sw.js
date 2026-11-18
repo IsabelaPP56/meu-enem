@@ -1,7 +1,7 @@
 // Meu ENEM · service worker v4 (Fase 1). Estratégia: rede primeiro para tudo do próprio site.
 // Com internet, sempre usa a versão publicada; sem internet, usa a última cópia guardada.
 // Não intercepta Firebase, Google, YouTube nem qualquer outro domínio.
-const CACHE='meu-enem-v4-matrizd';
+const CACHE='meu-enem-v4-tri';
 self.addEventListener('install',e=>{self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil((async()=>{for(const k of await caches.keys())if(k!==CACHE)await caches.delete(k);await self.clients.claim()})())});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==self.location.origin)return;if(u.pathname.endsWith('/sw.js'))return;
