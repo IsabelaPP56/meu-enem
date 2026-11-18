@@ -2,8 +2,11 @@ MEU ENEM — v3.4 (incremental sobre v3.3)
 
 Esta versão abre em HTTPS, com internet, pelo GitHub Pages. Não abra por file://: Firebase/ES modules, login, reCAPTCHA e IA dependem da rede. Para estudo totalmente offline, mantenha uma cópia COMPLETA anterior à v3.2. O pacote v3.1 também é incremental, não uma cópia completa do banco.
 
-3.364 questões • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
+4.080 questões (716 do ENEM PPL 2016–2019) • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
 Aulas: índice local de até 300 uploads recentes por canal. Vídeos/fontes externas precisam de internet. Nenhuma aula é baixada.
+
+NOVIDADE — ENEM PPL 2016–2019
+Questões da reaplicação/PPL do INEP entram no banco com a marca "ENEM <ano> PPL", exibidas como recorte da prova oficial. Só entram itens com gabarito oficial conferido em mais de uma fonte; anulados ficam de fora. O filtro de ano separa "2019" de "2019 PPL". O simulado "prova de um ano" continua só com a prova regular.
 
 NOVIDADES v3.4 — ASSISTENTE E MINHA CONTA
 O botão redondo abre o chat lateral (tela cheia no celular), com atalhos, mensagens em tempo real, histórico ao minimizar/reabrir e erros com nova tentativa. Perguntas gerais não anexam figuras de uma questão aberta sem necessidade. Contexto de questão inclui figuras e gabarito; resumo aberto também é reconhecido. A conversa fica na memória desta sessão e é descartada ao sair/trocar conta.

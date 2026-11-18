@@ -1,28 +1,28 @@
 {
   "counts": {
-    "matematica": 833,
-    "linguagens": 804,
-    "natureza": 865,
-    "humanas": 862
+    "matematica": 1012,
+    "linguagens": 984,
+    "natureza": 1042,
+    "humanas": 1042
   },
-  "totalQuestions": 3364,
+  "totalQuestions": 4080,
   "themes": 100,
   "officialThemes": 20,
   "trainingThemes": 80,
   "repertories": 206,
-  "withOfficialB": 3007,
+  "withOfficialB": 3543,
   "tri": {
-    "Fácil": 987,
-    "Média": 1006,
-    "Difícil": 1014,
-    "sem dado": 357
+    "Fácil": 1161,
+    "Média": 1189,
+    "Difícil": 1193,
+    "sem dado": 537
   },
-  "assetFiles": 4054,
+  "assetFiles": 4801,
   "areas": [
     {
       "area": "matematica",
       "title": "Matemática",
-      "count": 833,
+      "count": 1012,
       "pages": 1025,
       "imageBytes": 17730128,
       "imageFiles": 1888,
@@ -37,7 +37,7 @@
     {
       "area": "linguagens",
       "title": "Linguagens",
-      "count": 804,
+      "count": 984,
       "pages": 835,
       "imageBytes": 12175534,
       "imageFiles": 410,
@@ -52,7 +52,7 @@
     {
       "area": "natureza",
       "title": "Natureza",
-      "count": 865,
+      "count": 1042,
       "pages": 1055,
       "imageBytes": 16917110,
       "imageFiles": 1328,
@@ -67,7 +67,7 @@
     {
       "area": "humanas",
       "title": "Humanas",
-      "count": 862,
+      "count": 1042,
       "pages": 893,
       "imageBytes": 10987994,
       "imageFiles": 367,
@@ -745,5 +745,27 @@
       "serviceWorkerCache": "meu-enem-v4-2",
       "pplImport": "não incluído nesta entrega"
     }
+  },
+  "ppl": {
+    "edicao": "ENEM PPL/reaplicação (INEP)",
+    "anos": "2016–2019",
+    "etapa": "a2",
+    "questoes": 716,
+    "porArea": {
+      "matematica": 179,
+      "linguagens": 180,
+      "natureza": 177,
+      "humanas": 180
+    },
+    "porAno": {
+      "2016": 180,
+      "2017": 180,
+      "2018": 178,
+      "2019": 178
+    },
+    "imagens": 747,
+    "bytesImagens": 36561596,
+    "gabarito": "somente itens com gabarito oficial conferido em pelo menos 2 fontes além do PDF principal; anulados/abandonados excluídos",
+    "exibicao": "recorte da prova oficial (modo original)"
   }
 }
