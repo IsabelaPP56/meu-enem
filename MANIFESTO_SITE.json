@@ -1,28 +1,28 @@
 {
   "counts": {
-    "matematica": 1281,
-    "linguagens": 1251,
-    "natureza": 1310,
-    "humanas": 1312
+    "matematica": 1371,
+    "linguagens": 1340,
+    "natureza": 1399,
+    "humanas": 1402
   },
-  "totalQuestions": 5154,
+  "totalQuestions": 5512,
   "themes": 100,
   "officialThemes": 20,
   "trainingThemes": 80,
   "repertories": 206,
-  "withOfficialB": 4617,
+  "withOfficialB": 4886,
   "tri": {
-    "Fácil": 1519,
-    "Média": 1539,
-    "Difícil": 1559,
-    "sem dado": 537
+    "Fácil": 1609,
+    "Média": 1629,
+    "Difícil": 1648,
+    "sem dado": 626
   },
-  "assetFiles": 5957,
+  "assetFiles": 6335,
   "areas": [
     {
       "area": "matematica",
       "title": "Matemática",
-      "count": 1281,
+      "count": 1371,
       "pages": 1025,
       "imageBytes": 17730128,
       "imageFiles": 1888,
@@ -37,7 +37,7 @@
     {
       "area": "linguagens",
       "title": "Linguagens",
-      "count": 1251,
+      "count": 1340,
       "pages": 835,
       "imageBytes": 12175534,
       "imageFiles": 410,
@@ -52,7 +52,7 @@
     {
       "area": "natureza",
       "title": "Natureza",
-      "count": 1310,
+      "count": 1399,
       "pages": 1055,
       "imageBytes": 16917110,
       "imageFiles": 1328,
@@ -67,7 +67,7 @@
     {
       "area": "humanas",
       "title": "Humanas",
-      "count": 1312,
+      "count": 1402,
       "pages": 893,
       "imageBytes": 10987994,
       "imageFiles": 367,
@@ -748,16 +748,17 @@
   },
   "ppl": {
     "edicao": "ENEM PPL/reaplicação (INEP)",
-    "anos": "2016–2024",
+    "anos": "2015–2024",
     "etapa": "b3",
-    "questoes": 1613,
+    "questoes": 1793,
     "porArea": {
-      "matematica": 404,
-      "linguagens": 403,
-      "natureza": 401,
-      "humanas": 405
+      "matematica": 449,
+      "linguagens": 448,
+      "natureza": 446,
+      "humanas": 450
     },
     "porAno": {
+      "2015": 180,
       "2016": 180,
       "2017": 180,
       "2018": 178,
@@ -774,20 +775,22 @@
     "exibicao": "recorte da prova oficial (modo original)"
   },
   "lote2": {
-    "etapa": "d2020",
-    "edicoes": "PPL 2016–2024; Digital 2020",
-    "questoes": 177,
+    "etapa": "p2015",
+    "edicoes": "PPL 2015–2024; 2ª aplicação 2016; Digital 2020",
+    "questoes": 535,
     "porEdicao": {
-      "2020 Digital": 177
+      "2020 Digital": 177,
+      "2016 2ª aplicação": 178,
+      "2015 PPL": 180
     },
     "porArea": {
-      "matematica": 44,
-      "linguagens": 44,
-      "natureza": 44,
-      "humanas": 45
+      "matematica": 134,
+      "linguagens": 133,
+      "natureza": 133,
+      "humanas": 135
     },
-    "imagens": 179,
-    "bytesImagens": 6678246,
+    "imagens": 557,
+    "bytesImagens": 26605988,
     "pastaImagens": "assets/inep/<ano>/",
     "gabarito": "somente itens com gabarito oficial conferido em pelo menos 2 fontes além do PDF principal (microdados INEP e/ou outros cadernos pareados por CO_ITEM/texto); anulados excluídos",
     "duplicatas": "itens já presentes no banco (mesmo texto) não entram; ENEM Digital 2021 e 2022 repetem a prova regular e ficaram de fora",

@@ -2,11 +2,11 @@ MEU ENEM — v3.4 (incremental sobre v3.3)
 
 Esta versão abre em HTTPS, com internet, pelo GitHub Pages. Não abra por file://: Firebase/ES modules, login, reCAPTCHA e IA dependem da rede. Para estudo totalmente offline, mantenha uma cópia COMPLETA anterior à v3.2. O pacote v3.1 também é incremental, não uma cópia completa do banco.
 
-5.154 questões (1.790 de provas oficiais do INEP: PPL 2016–2024; Digital 2020) • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
+5.512 questões (2.148 de provas oficiais do INEP: PPL 2015–2024; 2ª aplicação 2016; Digital 2020) • 130 resumos • 900 explicações editoriais 2021–2025 • 100 temas • 206 repertórios • 7.925 vídeos em 29 canais.
 Aulas: índice local de até 300 uploads recentes por canal. Vídeos/fontes externas precisam de internet. Nenhuma aula é baixada.
 
-NOVIDADE — PROVAS OFICIAIS DO INEP, LOTE 2 (PPL 2016–2024; Digital 2020)
-Entram questões de outras aplicações oficiais, com a edição no rótulo: "ENEM 2020 Digital". O filtro de ano mostra cada uma separadamente (por exemplo "2020", "2020 PPL" e "2020 Digital"). Só entram itens com gabarito oficial conferido em pelo menos duas fontes além do PDF; anulados ficam de fora. Questões que já existiam no banco não foram duplicadas: a 2ª aplicação (reaplicação/PPL) de 2020 já está no banco como "ENEM 2020 PPL", e o ENEM Digital 2021 e 2022 repete a prova regular desses anos; por isso não entraram de novo. O simulado "prova de um ano" continua só com a prova regular.
+NOVIDADE — PROVAS OFICIAIS DO INEP, LOTE 2 (PPL 2015–2024; 2ª aplicação 2016; Digital 2020)
+Entram questões de outras aplicações oficiais, com a edição no rótulo: "ENEM 2020 Digital", "ENEM 2016 2ª aplicação", "ENEM 2015 PPL". O filtro de ano mostra cada uma separadamente (por exemplo "2015" e "2015 PPL"). Só entram itens com gabarito oficial conferido em pelo menos duas fontes além do PDF; anulados ficam de fora. Questões que já existiam no banco não foram duplicadas: a 2ª aplicação (reaplicação/PPL) de 2020 já está no banco como "ENEM 2020 PPL", e o ENEM Digital 2021 e 2022 repete a prova regular desses anos; por isso não entraram de novo. O simulado "prova de um ano" continua só com a prova regular.
 
 NOVIDADE — ENEM PPL 2016–2024
 Questões da reaplicação/PPL do INEP entram no banco com a marca "ENEM <ano> PPL", exibidas como recorte da prova oficial. Só entram itens com gabarito oficial conferido em mais de uma fonte; anulados ficam de fora. O filtro de ano separa "2019" de "2019 PPL". O simulado "prova de um ano" continua só com a prova regular.
