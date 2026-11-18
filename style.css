@@ -222,3 +222,10 @@ html:not([data-theme=dark]) .theme-kind.training{color:#73520c}
 .f2-spinner{display:inline-block;width:26px;height:26px;border:3px solid #d9c8f3;border-top-color:#7227da;border-radius:50%;animation:f2spin .9s linear infinite}
 @keyframes f2spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.f2-spinner{animation:none}}
 #question-detail[data-f2-loading] .cloud-explanation{display:none}
+
+/* contraste_feedback (18/11/2026): bloco de feedback legível desde o primeiro quadro e botão "Tentar novamente" com contraste AA no modo escuro */
+@keyframes feedback-in{0%{transform:translateY(7px)}100%{transform:none}}
+@keyframes feedback-arrives{from{transform:translateY(6px)}to{transform:translateY(0)}}
+.feedback small{opacity:1}
+[data-theme="dark"] .btn.text{color:#b794ff}
+@media (prefers-reduced-motion:reduce){.feedback{animation:none}}
