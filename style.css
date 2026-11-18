@@ -264,3 +264,5 @@ html:not([data-theme=dark]) .theme-kind.training{color:#73520c}
 @media (max-width:640px){.mx-head{flex-wrap:wrap}.mx-text{flex-basis:100%;order:3}.mx-foot small{min-width:100%}}
 /* contraste pré-existente em "Meu desempenho" (percentuais das barras no modo claro: 3,67:1 → 6,15:1); o modo escuro mantém #dcc2f3 */
 .bar-label strong{color:#7a4f9a}
+/* matriz_c (18/11/2026): contraste pré-existente do item selecionado na lista do banco, modo claro (#766d81 sobre #f7f2fe = 4,47:1 → 5,69:1) */
+html:not([data-theme="dark"]) .question-item.selected small,html:not([data-theme="dark"]) .question-item.selected .question-status{color:#655d70}

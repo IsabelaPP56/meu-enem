@@ -842,9 +842,11 @@
     "totalExplicacoes": 1054
   },
   "matriz": {
-    "etapa": "matriza",
+    "etapa": "matrizc",
     "areas": [
-      "natureza"
+      "natureza",
+      "humanas",
+      "matematica"
     ],
     "arquivo": "data/matriz.js",
     "resumo": {
@@ -859,6 +861,32 @@
           "sec_e2": 92,
           "a": 37,
           "sec_r2": 6
+        }
+      },
+      "humanas": {
+        "questoes": 1402,
+        "com_etiqueta": 1199,
+        "por_origem": {
+          "o": 1170,
+          "b": 143,
+          "m": 60,
+          "sec_e2": 39,
+          "r": 24,
+          "a": 5,
+          "sec_r2": 5
+        }
+      },
+      "matematica": {
+        "questoes": 1371,
+        "com_etiqueta": 1260,
+        "por_origem": {
+          "o": 1212,
+          "sec_e2": 123,
+          "m": 40,
+          "b": 71,
+          "r": 24,
+          "a": 24,
+          "sec_r2": 5
         }
       }
     },
@@ -883,6 +911,52 @@
           "media": {
             "n": 366,
             "acerto": 0.385
+          }
+        }
+      },
+      "humanas": {
+        "treino_oficial": 1170,
+        "sem_oficial": 232,
+        "cv": "GroupKFold(6) por ano",
+        "acerto_top1": 0.26,
+        "acerto_top2": 0.401,
+        "acerto_competencia": 0.503,
+        "base_classe_mais_comum": 0.043,
+        "por_confianca": {
+          "alta": {
+            "n": 88,
+            "acerto": 0.557
+          },
+          "baixa": {
+            "n": 768,
+            "acerto": 0.188
+          },
+          "media": {
+            "n": 314,
+            "acerto": 0.354
+          }
+        }
+      },
+      "matematica": {
+        "treino_oficial": 1212,
+        "sem_oficial": 159,
+        "cv": "GroupKFold(6) por ano",
+        "acerto_top1": 0.399,
+        "acerto_top2": 0.569,
+        "acerto_competencia": 0.685,
+        "base_classe_mais_comum": 0.042,
+        "por_confianca": {
+          "alta": {
+            "n": 352,
+            "acerto": 0.67
+          },
+          "baixa": {
+            "n": 507,
+            "acerto": 0.229
+          },
+          "media": {
+            "n": 353,
+            "acerto": 0.371
           }
         }
       }
