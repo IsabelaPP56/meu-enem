@@ -1,28 +1,28 @@
 {
   "counts": {
-    "matematica": 1237,
-    "linguagens": 1207,
-    "natureza": 1266,
-    "humanas": 1267
+    "matematica": 1281,
+    "linguagens": 1251,
+    "natureza": 1310,
+    "humanas": 1312
   },
-  "totalQuestions": 4977,
+  "totalQuestions": 5154,
   "themes": 100,
   "officialThemes": 20,
   "trainingThemes": 80,
   "repertories": 206,
-  "withOfficialB": 4440,
+  "withOfficialB": 4617,
   "tri": {
-    "Fácil": 1459,
-    "Média": 1482,
-    "Difícil": 1499,
+    "Fácil": 1519,
+    "Média": 1539,
+    "Difícil": 1559,
     "sem dado": 537
   },
-  "assetFiles": 5778,
+  "assetFiles": 5957,
   "areas": [
     {
       "area": "matematica",
       "title": "Matemática",
-      "count": 1237,
+      "count": 1281,
       "pages": 1025,
       "imageBytes": 17730128,
       "imageFiles": 1888,
@@ -37,7 +37,7 @@
     {
       "area": "linguagens",
       "title": "Linguagens",
-      "count": 1207,
+      "count": 1251,
       "pages": 835,
       "imageBytes": 12175534,
       "imageFiles": 410,
@@ -52,7 +52,7 @@
     {
       "area": "natureza",
       "title": "Natureza",
-      "count": 1266,
+      "count": 1310,
       "pages": 1055,
       "imageBytes": 16917110,
       "imageFiles": 1328,
@@ -67,7 +67,7 @@
     {
       "area": "humanas",
       "title": "Humanas",
-      "count": 1267,
+      "count": 1312,
       "pages": 893,
       "imageBytes": 10987994,
       "imageFiles": 367,
@@ -771,6 +771,26 @@
     "imagens": 1724,
     "bytesImagens": 86038258,
     "gabarito": "somente itens com gabarito oficial conferido em pelo menos 2 fontes além do PDF principal; anulados/abandonados excluídos",
+    "exibicao": "recorte da prova oficial (modo original)"
+  },
+  "lote2": {
+    "etapa": "d2020",
+    "edicoes": "PPL 2016–2024; Digital 2020",
+    "questoes": 177,
+    "porEdicao": {
+      "2020 Digital": 177
+    },
+    "porArea": {
+      "matematica": 44,
+      "linguagens": 44,
+      "natureza": 44,
+      "humanas": 45
+    },
+    "imagens": 179,
+    "bytesImagens": 6678246,
+    "pastaImagens": "assets/inep/<ano>/",
+    "gabarito": "somente itens com gabarito oficial conferido em pelo menos 2 fontes além do PDF principal (microdados INEP e/ou outros cadernos pareados por CO_ITEM/texto); anulados excluídos",
+    "duplicatas": "itens já presentes no banco (mesmo texto) não entram; ENEM Digital 2021 e 2022 repetem a prova regular e ficaram de fora",
     "exibicao": "recorte da prova oficial (modo original)"
   }
 }
