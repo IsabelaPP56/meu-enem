@@ -842,11 +842,12 @@
     "totalExplicacoes": 1054
   },
   "matriz": {
-    "etapa": "matrizc",
+    "etapa": "matrizd",
     "areas": [
       "natureza",
       "humanas",
-      "matematica"
+      "matematica",
+      "linguagens"
     ],
     "arquivo": "data/matriz.js",
     "resumo": {
@@ -887,6 +888,19 @@
           "r": 24,
           "a": 24,
           "sec_r2": 5
+        }
+      },
+      "linguagens": {
+        "questoes": 1340,
+        "com_etiqueta": 1251,
+        "por_origem": {
+          "o": 1203,
+          "b": 30,
+          "r": 24,
+          "m": 59,
+          "sec_e2": 123,
+          "a": 24,
+          "sec_r2": 4
         }
       }
     },
@@ -957,6 +971,29 @@
           "media": {
             "n": 353,
             "acerto": 0.371
+          }
+        }
+      },
+      "linguagens": {
+        "treino_oficial": 1203,
+        "sem_oficial": 137,
+        "cv": "GroupKFold(6) por ano",
+        "acerto_top1": 0.456,
+        "acerto_top2": 0.704,
+        "acerto_competencia": 0.862,
+        "base_classe_mais_comum": 0.06,
+        "por_confianca": {
+          "alta": {
+            "n": 338,
+            "acerto": 0.669
+          },
+          "baixa": {
+            "n": 286,
+            "acerto": 0.301
+          },
+          "media": {
+            "n": 579,
+            "acerto": 0.409
           }
         }
       }
