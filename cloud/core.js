@@ -19,5 +19,5 @@ export function validateEssay(x){
  return{canEvaluate:true,transcription:x.transcription.slice(0,40000),competencies,total:competencies.reduce((n,c)=>n+c.score,0),problematicExcerpts:x.problematicExcerpts.filter(s=>typeof s==='string').slice(0,20),suggestions:x.suggestions.filter(s=>typeof s==='string').slice(0,15),warning:String(x.warning||'Estimativa de IA; não é correção oficial do INEP.')}
 }
 export function quotaDecision(old,now,limit=30){if(!old||now-old.windowStart>=86400000)return{windowStart:now,count:1};if(old.count>=limit)throw Error('Seu limite de 30 tentativas em 24 horas foi atingido. Tente após o fim desta janela.');return{windowStart:old.windowStart,count:old.count+1}}
-export const STUDY_KEYS=['progress.v1','drafts.v1','settings.v1','learning.v2','simulados.v1','plano.v1'].map(x=>'meuenem.enem.2027.'+x);
+export const STUDY_KEYS=['progress.v1','drafts.v1','settings.v1','learning.v2','simulados.v1','plano.v1','habits.v1'].map(x=>'meuenem.enem.2027.'+x);
 export function validProgress(x){if(!x||typeof x!=='object'||Array.isArray(x))throw Error('Progresso inválido.');for(const[k,v]of Object.entries(x)){if(!/^(matematica|linguagens|natureza|humanas):[LMNH]\d{3,4}$/.test(k)||!v||typeof v!=='object'||(v.choice&&!LETTERS.includes(v.choice)))throw Error('Registro de progresso inválido.')}return x}
