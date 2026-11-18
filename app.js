@@ -1,4 +1,10 @@
 "use strict";
+// FASE 2: índice leve dos bancos. O conteúdo (enunciado, alternativas, comentário) chega por área, sob demanda.
+(()=>{const I=window.ENEM_BANK_INDEX,B=window.ENEM_BANKS||(window.ENEM_BANKS={}),L=window.ENEM_BANK_LOADED=window.ENEM_BANK_LOADED||{};if(!I)return;
+ for(const [a,x] of Object.entries(I)){if(Array.isArray(B[a])&&B[a].length&&'text' in B[a][0]){L[a]=true;continue}if(!x||!Array.isArray(x.q)||!Array.isArray(x.s)||!Array.isArray(x.t))continue;
+  const list=x.q.map(r=>({id:r[0],area:a,year:r[1],number:r[2],subject:x.s[r[3]],topic:x.t[r[4]],answer:r[5],tri:r[6],b:r[7]}));
+  Object.defineProperty(B,a,{configurable:true,enumerable:true,get(){return list},set(full){if(!Array.isArray(full))return;const by=new Map(list.map(q=>[q.id,q]));for(const f of full){if(!f||typeof f!=='object')continue;const q=by.get(f.id);if(q)Object.assign(q,f);else if(f.area===a){list.push(Object.assign({},f))}}L[a]=true}})}
+})();
 (() => {
  const AREAS=window.ENEM_AREAS, BANKS=window.ENEM_BANKS, RED=window.ENEM_REDA;
  const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
@@ -505,5 +511,30 @@ window.MEU_ENEM_SUMMARIES.v2={index:rv2Index,load:rv2Load,jobs:rv2Jobs};
  v4RegisterSW();
  window.MEU_ENEM_V4={habits:()=>v4h,startQuick:v4Start,answeredToday:v4AnsweredToday,week:v4Week,tick:v4Tick,nudge:v4Nudge,mergePlaylists:v4MergePlaylistVideos};
  Object.assign(window.MEU_ENEM_APP,{render,view});
+// FASE 2: conteúdo das questões sob demanda por área. O início baixa só o índice leve (~150 KB);
+// enunciados e alternativas de uma área chegam quando alguém abre uma questão dela.
+ const f2Areas=AREAS.filter(a=>a.id!=='redacao').map(a=>a.id),f2Promise={},f2Err=new Set(),f2Want=new Set();let f2Shown=false,f2Timer=0;
+ const f2Loaded=a=>!f2Areas.includes(a)||!!window.ENEM_BANK_LOADED?.[a]||!!(BANKS[a]?.length&&'text' in BANKS[a][0]);
+ const f2Has=q=>!q||'text' in q||'native' in q;
+ const f2Name=a=>AREAS.find(x=>x.id===a)?.name||a;
+ function f2Load(a){if(f2Loaded(a))return Promise.resolve(true);if(f2Promise[a])return f2Promise[a];f2Err.delete(a);
+  f2Promise[a]=new Promise(res=>{const s=document.createElement('script');s.src='data/'+a+'.js';s.async=true;s.dataset.bankContent=a;const done=ok=>{f2Promise[a]=null;if(!ok){f2Err.add(a);s.remove()}res(ok)};s.onload=()=>done(f2Loaded(a));s.onerror=()=>done(false);document.body.appendChild(s)});return f2Promise[a]}
+ function f2Request(areas,{rerender=true}={}){const miss=[...new Set(areas)].filter(a=>f2Areas.includes(a)&&!f2Loaded(a)&&!f2Err.has(a));if(!miss.length)return Promise.resolve(true);if(rerender)miss.forEach(a=>f2Want.add(a));
+  return Promise.all(miss.map(f2Load)).then(r=>{const ok=r.every(Boolean);if(f2Shown||!ok&&rerender){clearTimeout(f2Timer);f2Timer=setTimeout(()=>{f2Shown=false;f2Want.clear();render()},0)}return ok})}
+ function f2Note(areas){f2Shown=true;const a=[...new Set(areas)],err=a.filter(x=>f2Err.has(x));return '<section class="panel f2-loading" role="status" aria-live="polite">'+(err.length?'<h2>Não foi possível abrir as questões de '+esc(err.map(f2Name).join(' e '))+'</h2><p>Confira a internet e tente de novo. Seu progresso continua salvo.</p><button type="button" class="btn primary" data-f2-retry="'+esc(err.join(','))+'">Tentar novamente</button>':'<span class="f2-spinner" aria-hidden="true"></span><h2>Abrindo as questões de '+esc(a.map(f2Name).join(' e '))+'…</h2><p>Os enunciados de cada área chegam só quando você precisa deles. Isso leva alguns segundos na primeira vez.</p>')+'</section>'}
+ // 1) Toda renderização de questão confere se o conteúdo da área já chegou.
+ const f2QH=questionHTML;questionHTML=function(q,...rest){if(q&&!f2Loaded(q.area)){f2Request([q.area]);return f2Note([q.area])}if(q&&!f2Has(q))return '<section class="panel f2-loading" role="status"><h2>Questão indisponível</h2><p>Esta questão não está no pacote desta área. Escolha outra na lista.</p></section>';return f2QH(q,...rest)};
+ // 2) Simulado em andamento e resultado: carregam as áreas do simulado antes de desenhar.
+ function f2SimAreas(detailOnly){try{const s=p3Session();if(!s)return[];if(detailOnly){const rows=s.results||[],r=rows[Math.max(0,Math.min(rows.length-1,state.simDetail||0))];return r?[String(r.key).split(':')[0]]:[]}return(s.keys||[]).map(k=>String(k).split(':')[0])}catch(e){return[]}}
+ function f2Guard(fn,areasOf){return function(...args){const need=areasOf().filter(a=>f2Areas.includes(a)&&!f2Loaded(a));if(need.length){f2Request(need);$('#main').innerHTML=f2Note(need);return}return fn.apply(this,args)}}
+ p3RenderActive=f2Guard(p3RenderActive,()=>f2SimAreas(false));p3RenderResult=f2Guard(p3RenderResult,()=>f2SimAreas(true));
+ // 3) Busca por texto: completa a busca quando o conteúdo da área chega.
+ const f2Filtered=filtered;filtered=function(area=state.area,f=state.filters){if(f?.search&&!f2Loaded(area)){f2Request([area]);f2Shown=true}return f2Filtered(area,f)};
+ // 4) Pré-carregamento silencioso: ao entrar no banco de uma área, num simulado ou no caderno de erros.
+ function f2Prefetch(){try{if(state.view==='bank')f2Request([state.area],{rerender:false});else if(state.view==='simulator')f2Request(f2SimAreas(false),{rerender:false});else if(state.view==='review'){const due=dueReviews().map(x=>String(x.key||x.k||'').split(':')[0]).filter(Boolean);f2Request(due.length?due:[],{rerender:false})}}catch(e){}}
+ const f2Render=render;render=function(){f2Render();const h=$('#question-detail');if(h)h.toggleAttribute('data-f2-loading',!!h.querySelector('.f2-loading'));f2Prefetch()};
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-f2-retry]');if(!b)return;for(const a of b.dataset.f2Retry.split(','))f2Err.delete(a);f2Shown=true;b.disabled=true;f2Request(b.dataset.f2Retry.split(','));render()});
+ window.MEU_ENEM_BANKS={loaded:a=>f2Loaded(a),load:a=>f2Request([a],{rerender:false}),areas:f2Areas,errors:()=>[...f2Err]};
+ Object.assign(window.MEU_ENEM_APP,{render,filtered});
  render();if(!storageOK)toast('Armazenamento local indisponível: use Exportar backup para guardar seu progresso.');
 })();

@@ -259,7 +259,7 @@
   "version": "3.3",
   "phase": "Fase 3B: resumos autorais e resoluções em expansão",
   "questionsUnchanged": false,
-  "channels": 29,
+  "channels": 36,
   "repertoryCards": 59,
   "repertoryCatalog": 49,
   "sourceSupports": 10,
@@ -667,7 +667,7 @@
   "summaries": 130,
   "editorialDetailedResolutions": 900,
   "indexedVideos": 7925,
-  "indexedChannels": 29,
+  "indexedChannels": 36,
   "cloud": {
     "provider": "Firebase",
     "requiresInternet": true,
@@ -683,7 +683,7 @@
     "manualApprovalLink": true,
     "codeLength": 32,
     "defaultExpiryDays": 30,
-    "defaultMaxUses": null,
+    "defaultMaxUses": 1,
     "counter": "atomic users approval + invite uses increment; getAfter enforced",
     "adminCollection": "admins/{uid} (root)"
   },
@@ -711,5 +711,39 @@
       "essay and explanation flows"
     ],
     "qa": "Node/jsdom + mocked Firebase streaming; static HTML/CSS previews, not real browser or production AI"
+  },
+  "v4": {
+    "fase1": {
+      "commit": "5cee9d2",
+      "quickTraining": true,
+      "dailyGoalKey": "meuenem.enem.2027.habits.v1",
+      "videoPlaylists": 156,
+      "searchableVideos": 10146,
+      "pwa": {
+        "manifest": "manifest.webmanifest",
+        "serviceWorker": "sw.js",
+        "strategy": "network-first, mesmo domínio"
+      }
+    },
+    "fase2": {
+      "lazyBanks": true,
+      "bootIndex": [
+        "data/indice/matematica.js",
+        "data/indice/linguagens.js",
+        "data/indice/natureza.js",
+        "data/indice/humanas.js"
+      ],
+      "bootIndexBytes": 151683,
+      "contentOnDemand": [
+        "data/matematica.js",
+        "data/linguagens.js",
+        "data/natureza.js",
+        "data/humanas.js"
+      ],
+      "firstLoadMB_localTest": 1.5,
+      "firstLoadMB_before": 13.6,
+      "serviceWorkerCache": "meu-enem-v4-2",
+      "pplImport": "não incluído nesta entrega"
+    }
   }
 }

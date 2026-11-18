@@ -217,3 +217,8 @@ html:not([data-theme=dark]) .theme-kind.training{color:#73520c}
 [data-theme=dark] [data-action=timer-toggle],[data-theme=dark] [data-action=timer-reset],[data-theme=dark] [data-action=clear-filters]{color:#c4a6ff}
 [data-theme=dark] .question-item strong,[data-theme=dark] [data-question] > div > strong,[data-theme=dark] .quick-stats strong{color:#d6b8f2}
 [data-theme=dark] .quick-stats>div strong,[data-theme=dark] .quick-stats>div:last-child strong{color:#d6b8f2}
+/* Fase 2: aviso enquanto o conteúdo de uma área chega */
+.f2-loading{text-align:center;padding:28px 20px}.f2-loading h2{font-size:18px;margin:10px 0 6px}.f2-loading p{color:var(--muted);margin:0 auto 12px;max-width:46ch}
+.f2-spinner{display:inline-block;width:26px;height:26px;border:3px solid #d9c8f3;border-top-color:#7227da;border-radius:50%;animation:f2spin .9s linear infinite}
+@keyframes f2spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.f2-spinner{animation:none}}
+#question-detail[data-f2-loading] .cloud-explanation{display:none}
