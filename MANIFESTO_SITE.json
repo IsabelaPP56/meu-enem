@@ -312,7 +312,7 @@
   "phase4Started": false,
   "siteBytes": 73170770,
   "phase3Completed": false,
-  "phase3DetailedResolutions": 900,
+  "phase3DetailedResolutions": 950,
   "phase3DetailedSummaries": 130,
   "phase3Pending": "0 resumos; resoluções 2021–2025 em expansão; homologação em navegador real",
   "newPhase3Keys": [
@@ -795,5 +795,46 @@
     "gabarito": "somente itens com gabarito oficial conferido em pelo menos 2 fontes além do PDF principal (microdados INEP e/ou outros cadernos pareados por CO_ITEM/texto); anulados excluídos",
     "duplicatas": "itens já presentes no banco (mesmo texto) não entram; ENEM Digital 2021 e 2022 repetem a prova regular e ficaram de fora",
     "exibicao": "recorte da prova oficial (modo original)"
+  },
+  "resolucoes1a": {
+    "etapa": "resol1a",
+    "resolucoes": 50,
+    "porArea": {
+      "humanas": 18,
+      "matematica": 14,
+      "natureza": 18
+    },
+    "porAno": {
+      "2015": 8,
+      "2016": 7,
+      "2017": 12,
+      "2018": 5,
+      "2019": 7,
+      "2020": 11
+    },
+    "pacotes": [
+      "data/resolucoes/humanas_2015.js",
+      "data/resolucoes/humanas_2016.js",
+      "data/resolucoes/humanas_2017.js",
+      "data/resolucoes/humanas_2018.js",
+      "data/resolucoes/humanas_2019.js",
+      "data/resolucoes/humanas_2020.js",
+      "data/resolucoes/matematica_2015.js",
+      "data/resolucoes/matematica_2016.js",
+      "data/resolucoes/matematica_2017.js",
+      "data/resolucoes/matematica_2018.js",
+      "data/resolucoes/matematica_2019.js",
+      "data/resolucoes/matematica_2020.js",
+      "data/resolucoes/natureza_2015.js",
+      "data/resolucoes/natureza_2016.js",
+      "data/resolucoes/natureza_2017.js",
+      "data/resolucoes/natureza_2018.js",
+      "data/resolucoes/natureza_2019.js",
+      "data/resolucoes/natureza_2020.js"
+    ],
+    "escopo": "prova regular 2015–2020; antes só comentário genérico",
+    "criterio": "resolução independente; entra só se a letra = gabarito oficial INEP (PDF azul) = microdados INEP (TX_GABARITO, CO_PROVA azul) = banco",
+    "excluidas": [],
+    "totalExplicacoes": 950
   }
 }
