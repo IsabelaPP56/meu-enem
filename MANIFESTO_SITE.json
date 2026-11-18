@@ -840,5 +840,62 @@
     "criterio": "resolução independente; entra só se a letra = gabarito oficial INEP (PDF azul) = microdados INEP (TX_GABARITO, CO_PROVA azul) = banco",
     "excluidas": [],
     "totalExplicacoes": 1054
+  },
+  "matriz": {
+    "etapa": "matriza",
+    "areas": [
+      "natureza"
+    ],
+    "arquivo": "data/matriz.js",
+    "resumo": {
+      "natureza": {
+        "questoes": 1399,
+        "com_etiqueta": 1225,
+        "por_origem": {
+          "o": 1164,
+          "b": 117,
+          "r": 24,
+          "m": 57,
+          "sec_e2": 92,
+          "a": 37,
+          "sec_r2": 6
+        }
+      }
+    },
+    "validacao_estimativa": {
+      "natureza": {
+        "treino_oficial": 1164,
+        "sem_oficial": 235,
+        "cv": "GroupKFold(6) por ano",
+        "acerto_top1": 0.361,
+        "acerto_top2": 0.504,
+        "acerto_competencia": 0.479,
+        "base_classe_mais_comum": 0.042,
+        "por_confianca": {
+          "alta": {
+            "n": 255,
+            "acerto": 0.647
+          },
+          "baixa": {
+            "n": 543,
+            "acerto": 0.21
+          },
+          "media": {
+            "n": 366,
+            "acerto": 0.385
+          }
+        }
+      }
+    },
+    "fonte_matriz": "https://download.inep.gov.br/download/enem/matriz_referencia.pdf (sha256 6b56d523ccb85f74f7ed33e0cd679f3dd178ed6f13a5b0948bcfdfe8964ce6a1)",
+    "fonte_etiquetas": "CO_HABILIDADE de itens_AAAA.csv (microdados INEP), caderno casado por gabarito e parâmetro b",
+    "legenda": {
+      "o": "oficial INEP",
+      "r": "revisada manualmente",
+      "a": "estimada, confiança alta",
+      "r2": "relacionada (revisão)",
+      "e2": "relacionada (estimada; não entra no cálculo do painel)"
+    },
+    "painel": "Meu desempenho > Domínio da matriz"
   }
 }

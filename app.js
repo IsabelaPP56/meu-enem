@@ -540,6 +540,44 @@ window.MEU_ENEM_SUMMARIES.v2={index:rv2Index,load:rv2Load,jobs:rv2Jobs};
  const f2Render=render;render=function(){f2Render();const h=$('#question-detail');if(h)h.toggleAttribute('data-f2-loading',!!h.querySelector('.f2-loading'));f2Prefetch()};
  document.addEventListener('click',e=>{const b=e.target.closest('[data-f2-retry]');if(!b)return;for(const a of b.dataset.f2Retry.split(','))f2Err.delete(a);f2Shown=true;b.disabled=true;f2Request(b.dataset.f2Retry.split(','));render()});
  window.MEU_ENEM_BANKS={loaded:a=>f2Loaded(a),load:a=>f2Request([a],{rerender:false}),areas:f2Areas,errors:()=>[...f2Err]};
+ // 8) Domínio da matriz (item 8, parte 1): habilidades H1–H30 do INEP por questão e acerto por habilidade.
+ const MX=window.ENEM_MATRIZ&&window.ENEM_MATRIZ.areas?window.ENEM_MATRIZ:{areas:{}};
+ const MX_ORIG={o:'oficial INEP',r:'revisada',a:'estimada',r2:'relacionada',e2:'relacionada (estimada)'};
+ const MX_NOTE={o:'Etiqueta oficial do INEP (microdados da prova).',r:'Sem etiqueta oficial; habilidade definida na revisão manual.',a:'Sem etiqueta oficial; habilidade estimada pelo texto da questão (confiança alta).',r2:'Segunda habilidade mobilizada pela questão (revisão manual).',e2:'Habilidade relacionada, estimada pelo texto da questão.'};
+ let mxSel=null;const mxAreas=()=>AREAS.filter(a=>['matematica','linguagens','natureza','humanas'].includes(a.id));
+ function mxTags(q){return q?((MX.areas[q.area]||{}).q||{})[q.id]||[]:[]}
+ function mxPanelTags(q){return mxTags(q).filter(t=>t[1]!=='e2')}
+ function mxHab(a,h){return ((MX.areas[a]||{}).habilidades||{})[String(h)]||['',0]}
+ function mxCurrent(){const ids=mxAreas().map(a=>a.id);if(mxSel&&ids.includes(mxSel))return mxSel;return MX.areas[state.area]?state.area:(ids.find(a=>MX.areas[a])||ids[0])}
+ function mxStats(a){const H={};for(let h=1;h<=30;h++)H[h]={h,total:0,oficial:0,done:0,correct:0};let tagged=0,answered=0;
+  for(const q of all().filter(q=>q.area===a)){const tags=mxPanelTags(q);if(!tags.length)continue;tagged++;const r=record(q),ok=!annul(q)&&r?.choice;if(ok)answered++;
+   for(const h of new Set(tags.map(t=>t[0]))){const s=H[h];if(!s)continue;s.total++;if(tags.some(t=>t[0]===h&&t[1]==='o'))s.oficial++;if(ok){s.done++;if(r.choice===q.answer)s.correct++}}}
+  for(const s of Object.values(H))s.pct=s.done?Math.round(s.correct/s.done*100):0;return {H,tagged,answered,total:all().filter(q=>q.area===a).length}}
+ function mxLevel(s){if(s.done<3)return ['sem','Poucos dados'];if(s.pct>=70)return ['forte','Ponto forte'];if(s.pct>=50)return ['atencao','Atenção'];return ['reforcar','Reforçar']}
+ function mxPanel(){const a=mxCurrent(),A=AREAS.find(x=>x.id===a),M=MX.areas[a];
+  const tabs='<div class="mx-tabs" role="group" aria-label="Escolha a área da matriz">'+mxAreas().map(x=>'<button class="btn secondary mx-tab" type="button" data-mx-area="'+x.id+'" aria-pressed="'+(x.id===a)+'">'+esc(x.name)+'</button>').join('')+'</div>';
+  const head='<div class="section-title"><div><span class="eyebrow">MATRIZ DE REFERÊNCIA DO INEP</span><h2 id="mx-title">Domínio da matriz</h2></div><p>Seu acerto em cada habilidade (H1–H30) da matriz do ENEM, calculado a partir das questões que você já respondeu.</p></div>';
+  if(!M)return '<section class="panel mx-panel" id="dominio-matriz" aria-labelledby="mx-title">'+head+tabs+'<p class="mx-empty" role="status">As habilidades de '+esc(A?.name||'esta área')+' ainda estão sendo etiquetadas e chegam em um próximo pacote.</p></section>';
+  const st=mxStats(a),rows=Object.values(st.H),weak=rows.filter(s=>s.done>=3).sort((x,y)=>x.pct-y.pct||y.done-x.done).slice(0,3);
+  const comps=Object.keys(M.competencias).sort((x,y)=>x-y);
+  const row=s=>{const [lv,lt]=mxLevel(s),t=mxHab(a,s.h)[0];return '<li class="mx-row"><div class="mx-head"><b class="mx-code">H'+s.h+'</b><span class="mx-text">'+esc(t)+'</span><strong>'+(s.done?s.pct+'%':'—')+'</strong></div><div class="bar-track" role="progressbar" aria-label="Acerto na habilidade H'+s.h+'" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+s.pct+'"><span style="width:'+s.pct+'%"></span></div><div class="mx-foot"><small>'+s.correct+' acertos em '+s.done+' respostas · '+s.total+' questões no banco'+(s.total&&s.oficial<s.total?' ('+s.oficial+' com etiqueta oficial)':'')+'</small><span class="mx-badge mx-'+lv+'">'+lt+'</span>'+(s.total?'<button class="btn text mx-practice" type="button" data-mx-practice="'+a+':'+s.h+'">Praticar H'+s.h+'<span class="sr-only"> — '+esc(t)+'</span></button>':'')+'</div></li>'};
+  const body=comps.map(c=>{const hs=rows.filter(s=>mxHab(a,s.h)[1]===+c);if(!hs.length)return '';const d=hs.reduce((x,s)=>x+s.done,0),k=hs.reduce((x,s)=>x+s.correct,0);
+   return '<details class="mx-comp"'+(d?' open':'')+'><summary><span>Competência '+c+'</span><small>'+(d?Math.round(k/d*100)+'% · '+d+' respostas':'sem respostas ainda')+'</small></summary><p class="mx-comp-text">'+esc(M.competencias[c])+'</p><ul class="mx-list">'+hs.map(row).join('')+'</ul></details>'}).join('');
+  const resumo='<p class="mx-summary" role="status">'+fmt(st.answered)+' respostas em questões etiquetadas · '+fmt(st.tagged)+' de '+fmt(st.total)+' questões de '+esc(A.name)+' com habilidade definida.</p>';
+  const foco=weak.length?'<div class="mx-focus"><h3>Habilidades para reforçar agora</h3><ul>'+weak.map(s=>'<li><b>H'+s.h+'</b> · '+s.pct+'% em '+s.done+' respostas — '+esc(mxHab(a,s.h)[0])+'</li>').join('')+'</ul></div>':'<p class="mx-hint">Responda pelo menos 3 questões de uma habilidade para ver o diagnóstico dela.</p>';
+  return '<section class="panel mx-panel" id="dominio-matriz" aria-labelledby="mx-title">'+head+tabs+resumo+foco+body+'<p class="method-note">Etiquetas: oficiais do INEP (microdados) na maior parte das provas desde 2010; nas demais, habilidade revisada manualmente ou estimada pelo texto com confiança alta. Questões sem habilidade confiável ficam fora do painel. Ponto forte: 70% ou mais; atenção: 50% a 69%; reforçar: abaixo de 50% (com pelo menos 3 respostas). A estimativa de nota TRI virá em outra etapa.</p></section>'}
+ const mxOldProgress=renderProgress;renderProgress=function(){mxOldProgress();if(state.view!=='progress')return;const old=$('#dominio-matriz');if(old)old.remove();const html=mxPanel(),anchor=$('.topic-performance')||$('.backup-panel');if(anchor)anchor.insertAdjacentHTML('beforebegin',html);else $('#main')?.insertAdjacentHTML('beforeend',html)};
+ const mxOldFiltered=filtered;filtered=function(area=state.area,f=state.filters){const list=mxOldFiltered(area,f);if(!f?.hab)return list;const h=+f.hab;return list.filter(q=>mxTags(q).some(t=>t[0]===h))};
+ const mxOldQuestion=questionHTML;questionHTML=function(q,...rest){let h=mxOldQuestion(q,...rest);const tags=mxTags(q);if(!tags.length||!/class="question-heading"/.test(h))return h;
+  const chips='<div class="mx-chips" aria-label="Habilidades da matriz do INEP">'+tags.map(t=>'<span class="mx-chip mx-chip-'+t[1]+'" title="'+esc(mxHab(q.area,t[0])[0]+' — '+MX_NOTE[t[1]])+'"><b>H'+t[0]+'</b> '+esc(MX_ORIG[t[1]]||'')+'</span>').join('')+'</div>';
+  const i=h.indexOf('</header>');return i<0?h:h.slice(0,i+9)+chips+h.slice(i+9)};
+ const mxOldBank=renderBank;renderBank=function(...args){mxOldBank(...args);const f=state.filters;if(state.view!=='bank'||!f?.hab)return;const t=mxHab(state.area,f.hab)[0];const panel=$('.filter-panel');
+  panel?.insertAdjacentHTML('afterbegin','<p class="mx-filter" role="status"><span>Habilidade <b>H'+(+f.hab)+'</b>'+(t?' — '+esc(t):'')+'</span><button class="btn text" type="button" data-mx-clear>Remover filtro de habilidade</button></p>')};
+ document.addEventListener('click',e=>{const t=e.target.closest('[data-mx-area],[data-mx-practice],[data-mx-clear]');if(!t)return;
+  if(t.dataset.mxArea){mxSel=t.dataset.mxArea;render();setTimeout(()=>document.querySelector('[data-mx-area="'+mxSel+'"]')?.focus(),0);return}
+  if(t.hasAttribute('data-mx-clear')){delete state.filters.hab;state.qid=null;state.limit=50;render();return}
+  const [a,h]=t.dataset.mxPractice.split(':');state.filters={subject:'',topic:'',year:'',tri:'',status:'all',search:'',hab:h};view('bank',a)});
+ window.MEU_ENEM_MATRIZ={tags:mxTags,stats:mxStats,data:MX};
  Object.assign(window.MEU_ENEM_APP,{render,filtered});
  render();if(!storageOK)toast('Armazenamento local indisponível: use Exportar backup para guardar seu progresso.');
 })();

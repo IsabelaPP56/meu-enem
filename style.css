@@ -229,3 +229,38 @@ html:not([data-theme=dark]) .theme-kind.training{color:#73520c}
 .feedback small{opacity:1}
 [data-theme="dark"] .btn.text{color:#b794ff}
 @media (prefers-reduced-motion:reduce){.feedback{animation:none}}
+/* matriz_1 (18/11/2026): painel Domínio da matriz e etiquetas H1–H30 */
+.mx-panel{margin-bottom:25px;padding:24px 27px}
+@media (max-width:640px){.mx-panel{padding:18px 16px}}
+.mx-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.mx-tab[aria-pressed="true"]{background:var(--navy);color:var(--paper);border-color:var(--navy)}
+.mx-summary,.mx-hint,.mx-empty{font-size:13px;color:var(--ink);margin:0 0 12px}
+.mx-focus{border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin-bottom:14px;background:var(--soft)}
+.mx-focus h3{font-size:14px;margin:0 0 6px;color:var(--ink)}
+.mx-focus ul{margin:0;padding-left:18px;font-size:13px;color:var(--ink)}
+.mx-comp{border:1px solid var(--line);border-radius:10px;background:var(--paper);margin-bottom:10px}
+.mx-comp summary{padding:13px 15px;display:flex;gap:12px;align-items:center;cursor:pointer;font-size:13px;color:var(--ink)}
+.mx-comp summary span{flex:1;font-weight:700}
+.mx-comp summary small{color:var(--ink);font-size:12px}
+.mx-comp-text{font-size:12px;color:var(--ink);margin:0 15px 8px;line-height:1.45}
+.mx-list{list-style:none;margin:0;padding:0 15px 10px}
+.mx-row{padding:10px 0;border-top:1px solid var(--line)}
+.mx-head{display:flex;gap:10px;align-items:baseline;font-size:13px;margin-bottom:6px;color:var(--ink)}
+.mx-code{min-width:34px;color:var(--ink)}
+.mx-text{flex:1;line-height:1.4}
+.mx-head strong{white-space:nowrap;color:var(--ink)}
+.mx-foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:6px}
+.mx-foot small{flex:1;min-width:180px;font-size:12px;color:var(--ink)}
+.mx-badge{font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px}
+.mx-forte{background:#e3f3ea;color:#1d5a3c}
+.mx-atencao{background:#fff3d5;color:#6f4b00}
+.mx-reforcar{background:#fbe4e8;color:#8f2236}
+.mx-sem{background:var(--soft);color:var(--ink)}
+.mx-practice{font-size:12px}
+.mx-chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 10px}
+.mx-chip{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--soft);color:var(--ink)}
+.mx-chip b{color:var(--ink)}
+.mx-filter{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;font-size:13px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 12px}
+@media (max-width:640px){.mx-head{flex-wrap:wrap}.mx-text{flex-basis:100%;order:3}.mx-foot small{min-width:100%}}
+/* contraste pré-existente em "Meu desempenho" (percentuais das barras no modo claro: 3,67:1 → 6,15:1); o modo escuro mantém #dcc2f3 */
+.bar-label strong{color:#7a4f9a}
